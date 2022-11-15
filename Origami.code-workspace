@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "Origami",
+			"path": "."
+		},
+		{
+			"name": "img",
+			"path": "../../../Desktop/img"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Origami"
+	}
+}
