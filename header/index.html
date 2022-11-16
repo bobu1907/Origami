@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ivy-project</title>
+    <link rel="stylesheet" type="text/css" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css>
+
+    <style type="text/css">
+        i{
+            color:rgb(5, 3, 3);
+            width: 100px
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="logo">
+        <img src="../img/quacau.png" height="100px" width="100pxs">
+    </div>
+    <div class="menu">
+        <li><a href="">Children</a></li>
+        <ul class="sub-menu">
+            <li><a href="">Giấy mới về</a></li>
+            <li><a href="">Tùy Chọn Theo Màu</a></li>
+            <li><a href="">Origami USE</a>
+                <ul>
+                    <li><a href="">Seed</a></li>
+                    <li><a href="">Dolphin</a></li>
+                    <li><a href="">Pig</a></li>
+                    <li><a href="">Dog</a></li>
+                    <li><a href="">Cat</a></li>
+                </ul>
+            </li>
+            <li><a href="">Origami Vn</a>
+                <ul>
+                    <li><a href="">Hạt</a></li>
+                    <li><a href="">Cá Heo</a></li>
+                    <li><a href="">Heo</a></li>
+                    <li><a href="">Cún</a></li>
+                    <li><a href="">Mèo Con</a></li>
+                </ul>
+            </li>
+        </ul>
+        <li><a href="">Adult</a></li>
+        <li><a href="">South</a></li>
+        <li><a href="">Female</a></li>
+        <li><a href="">SALE</a></li>
+        <li><a href="">Product</a></li>
+        <li><a href="">Color</a></li>
+    </div>
+    <div class="others">
+<li> <input placeholder="Tìm Kiếm"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></li>
+<li> <i class="fa-solid fa-cart-shopping"></i></li>
+<li> <i class="fa-solid fa-address-book"></i></li>
+<li> <i class="fa-solid fa-shop"></i></a></li>
+    </div>
+</header>
+<section id="Slider">
+    <div class="aspect-ratio-169">
+        <img src="./imgheader/mewwo.jpg">
+        <img src="./imgheader/OIP.jpg">
+        <img src="./imgheader/R.jpg">
+    </div>
+<div class="dot-container">
+    <div class="dot active"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+</div> 
+
+
+</section>
+</body>
+<script>
+const imgPosition = document.querySelectorAll(".aspect-ratio-169 img")
+const imgContainer = document.querySelector('.aspect-ratio-169')
+const dotItem = document.querySelectorAll(".dot")
+let imgNumber =imgPosition.length 
+let index = 0
+// console.log(imgPosition)
+imgPosition.forEach(function(image,index){
+  image.style.left = index*100 + "%"
+  dotItem[index].addEventListener("click",function(){
+slider (index)
+  })
+
+})
+function imgSlide (){
+    index++;
+    console.log(index)
+if (index>=imgNumber) {index=0}
+slider (index)
+
+}
+function slider (index) {
+    imgContainer.style.left = "-" +index*100+ "%" 
+    const dotActive = document.querySelector('.active')
+    dotActive.classList.remove("active")
+    dotItem[index].classList.add("active")
+
+}
+
+setInterval(imgSlide,5000)
+
+
+</script>
+</html>
