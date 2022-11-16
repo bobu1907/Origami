@@ -23,7 +23,21 @@
 
 .bar2 {opacity:0;}
 
-.bar3 {transform: translate(0, -11px) rotate(45deg);}
+.bar3 {transform: translate(0, -11px) rotate(45deg); }
+
+.xx1 {width: 100px;height: 2px;background-color: rgb(0, 0, 0); position:absolute;top: 550px;right: 420px ;}
+.xx2 {width: 100px;height: 2px;background-color: rgb(0, 0, 0); position:absolute;top: 550px;right: 470px ;}
+.xx3 {width: 100px;height: 2px;background-color: rgb(0, 0, 0); position:absolute;top: 550px;right: 520px ;}
+.xx4 {width: 100px;height: 2px;background-color: rgb(0, 0, 0); position:absolute;top: 550px;right: 420px ;}
+.xx5 {width: 100px;height: 2px;background-color: rgb(0, 0, 0); position:absolute;top: 550px;right: 470px ;}
+.xx6 {width: 100px;height: 2px;background-color: rgb(0, 0, 0); position:absolute;top: 550px;right: 520px ;}
+.xx1 {transform: translate(0, 11px) rotate(-45deg);}
+.xx2 {transform: translate(0, 11px) rotate(-45deg);}
+.xx3 {transform: translate(0, 11px) rotate(-45deg);}
+.xx4 {transform: translate(0, 11px) rotate(-45deg);}
+.xx5 {transform: translate(0, 11px) rotate(-45deg);}
+.xx6 {transform: translate(0, 11px) rotate(-45deg);}
+
 /* ========================================================================================================== */
 
 #ori { width: 108px; height: 90px; background: rgb(157, 53, 53); transition: width 0.5s;margin-left:5px; }
@@ -67,9 +81,30 @@
 .miniSb {padding: 0 18px;background-color: white;max-height: 0;overflow: hidden;transition: max-height 0.2s ease-out;}
 .pagemini {text-decoration: none;display: block;}
 
-/* ================================================================================================================================== */
+/* /* ============================================== P R O D U C T - C A R D ============================================================================ */
 
-#bobu{}
+
+.wrapper {height: 420px;width: 654px;margin: 50px auto;border-radius: 7px 7px 7px 7px;-webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);}
+.product-img {float: left;height: 420px;width: 327px;}
+.product-img img {border-radius: 7px 0 0 7px;}
+.product-info {float: left;height: 420px;width: 327px;border-radius: 0 7px 10px 7px;background-color: #ffffff;}
+.product-text {height: 300px;width: 327px;}
+.product-text h1 {margin: 0 0 0 38px;padding-top: 52px;font-size: 34px;color: #474747;}
+.product-text h1,.product-price-btn p {font-family: 'Bentham', serif;}
+.product-text h2 {margin: 0 0 47px 38px;font-size: 13px;font-family: 'Raleway', sans-serif;font-weight: 400;
+  text-transform: uppercase;color: #d2d2d2;letter-spacing: 0.2em;}
+.product-text p {height: 125px;margin: 0 0 0 38px;font-family: 'Playfair Display', serif;color: #8d8d8d;
+  line-height: 1.7em;font-size: 15px;font-weight: lighter;overflow: hidden;}
+.product-price-btn {height: 103px;width: 327px;margin-top: 17px;position: relative;}
+.product-price-btn p {display: inline-block;position: absolute;top: -13px;height: 50px;font-family: 'Trocchi', serif;
+  margin: 0 0 0 38px;font-size: 28px;font-weight: lighter;color: #474747;}
+span {display: inline-block;height: 50px;font-family: 'Suranna', serif;font-size: 34px;}
+.product-price-btn button {float: right ;display: inline-block;height: 50px;width: 176px;margin: 0 40px 0 16px;
+  box-sizing: border-box;border: transparent;border-radius: 60px;font-family: 'Raleway', sans-serif;font-size: 14px;font-weight: 500;
+  text-transform: uppercase;letter-spacing: 0.2em;color: #ffffff;background-color: #9cebd5;cursor: pointer;outline: none;}
+.product-price-btn button:hover {background-color: #79b0a1;}
+
 </style>
 
 
@@ -116,7 +151,7 @@
                     <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search..." title="Type in a category">
                      
                       <button class="clickMiniSb" style=" margin:10px ;">CHOOSE YOUR PAPER</button>
-                          <div class="miniSb">
+                          <div class="miniSb" >
                             <hr>
                               <li class="pagemini"><a href="#/!" style="color:black">Origami Papers</a></li>
                               <li class="pagemini"><a href="#!a" style="color:black">Amazing papers</a></li>
@@ -158,9 +193,11 @@
                             <p>mlem mlem...</p>
                             <hr>
                           </div>
-
-                      
-                                                   
+                            
+                          <p style="padding-top: 3px; font-size: 70px;"><strong>SMARTS</strong></p>
+                            <div style=" margin-left: 25px;">
+                              <iframe src="https://assets.pinterest.com/ext/embed.html?id=1080652873062941466" height="277" width="236" frameborder="0" scrolling="no" ></iframe>
+                            </div>                       
                 </div>
             </nav>           
     </div>
@@ -215,45 +252,176 @@
           </div>
 
 
+
+
+          <div class="xx1"></div>
+          <div class="xx2"></div>
+          <div class="xx3"></div>
+          
+
+<div style="position:absolute;top: 510px;right: 10px;">
+<img src="/img/SALE-OFF-50.png" alt="" height="200px" width="400px">
+</div>
+
+<div style="position:absolute;top: 730px;right: 10px;">
+<img src="/img/poster.jpg" alt="" height="290px" width="400px">
+</div>
+
+
+
+
           <div>
             <p style="padding-top: 3px; font-size: 80px;"><strong>EZ WAYS</strong></p>
             
-            <div style="width: 750px; height: 400px;margin-left:2px ;display: block;">          
-              <div style="width: 750px; height:400px;">
-              <iframe width="750" height="400" src="https://www.youtube.com/embed/lKOVYw9R7oI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <li style="display:inline-block; width: 65%;">
+              <div style="width: 750px; height: 400px;margin-left:2px ;display: block;">          
+                <div style="width: 750px; height:400px;">
+                <iframe width="750" height="400" src="https://www.youtube.com/embed/lKOVYw9R7oI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                </div>
+                
               </div>
-              <div style="width: 750px; height:70px; background-color: #dddddd;">
-                <p style="font-size:50px ;margin:3px;">basic dino</p>
-              </div>
-            </div>
+            </li>
 
-          
+            <li style="display:inline-block; width: 0%;">
+              
+            </li>
 
+        </div>  
+
+
+<!-- ====================================================== B O O K  =================================================================== -->
           
+<div>
+  <iframe src="https://assets.pinterest.com/ext/embed.html?id=10977592832649667" height="900" width="450" frameborder="0" scrolling="no" ></iframe>
+</div>
+
+<div style="position:absolute;top:530px;right:-260px;">
+  <div class="xx4"></div>
+  <div class="xx5"></div>
+  <div class="xx6"></div>
+</div>
+<div style="position:absolute;top:1020px;right:350px;">
+  <p style="font-size:100px;"><strong>BOOKS</strong></p>
+
+
+</div>
+<div style="position:absolute;top:1150px;left:750px;height:600px;width:800px;">
+<p style="float:right;font-size: 50PX;margin-right: 100px;">Small thoughts</p>
+<p style="float:right;font-size: 100px;margin-right: 100px;">B I G W A Y S</p>
+<iframe src="https://assets.pinterest.com/ext/embed.html?id=780670916670872815" height="352" width="236" frameborder="0" scrolling="no" ></iframe>
+<iframe src="https://assets.pinterest.com/ext/embed.html?id=1052083162925855393" height="434" width="236" frameborder="0" scrolling="no" ></iframe>
+<iframe src="https://assets.pinterest.com/ext/embed.html?id=755971487452930672" height="336" width="236" frameborder="0" scrolling="no" ></iframe>
+</div>
+<!-- ============================================== P R O D U C T - C A R D ================================================== -->
+
+<div style="position:absolute;top:1950px;left: 0px;">
+  <img src="/img/wall.jpg" alt="" width="1490px" height="700px">
+</div>
+
+<table style="position:absolute;top:2400px;left: 100px;">
+  <tr>
+    <td>
+      <title>Harvest vase</title>
+      <link href="https://fonts.googleapis.com/css?family=Bentham|Playfair+Display|Raleway:400,500|Suranna|Trocchi" rel="stylesheet">
+      <div class="wrapper">
+        <div class="product-img">
+          <img src="/img/vit.png" height="420" width="327">
         </div>
+        <div class="product-info">
+          <div class="product-text">
+            <h1>Harvest Vase</h1>
+            <h2>by studio and friends</h2>
+            <p>Harvest Vases are a reinterpretation<br> of peeled fruits and vegetables as<br> functional objects. The surfaces<br> appear to be sliced and pulled aside,<br> allowing room for growth. </p>
+          </div>
+          <div class="product-price-btn">
+            <p><span>78</span>$</p>
+            <button type="button">buy now</button>
+          </div>
+        </div>
+      </div>
+    </td>
+
+    <td>
+      <title>Harvest vase</title>
+      <link href="https://fonts.googleapis.com/css?family=Bentham|Playfair+Display|Raleway:400,500|Suranna|Trocchi" rel="stylesheet">
+      <div class="wrapper">
+        <div class="product-img">
+          <img src="/img/fox.jpg" height="420" width="327">
+        </div>
+        <div class="product-info">
+          <div class="product-text">
+            <h1>Harvest Vase</h1>
+            <h2>by studio and friends</h2>
+            <p>Harvest Vases are a reinterpretation<br> of peeled fruits and vegetables as<br> functional objects. The surfaces<br> appear to be sliced and pulled aside,<br> allowing room for growth. </p>
+          </div>
+          <div class="product-price-btn">
+            <p><span>78</span>$</p>
+            <button type="button">buy now</button>
+          </div>
+        </div>
+      </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <title>Harvest vase</title>
+      <link href="https://fonts.googleapis.com/css?family=Bentham|Playfair+Display|Raleway:400,500|Suranna|Trocchi" rel="stylesheet">
+      <div class="wrapper">
+        <div class="product-img">
+          <img src="/img/pig.jpg" height="420" width="327">
+        </div>
+        <div class="product-info">
+          <div class="product-text">
+            <h1>Harvest Vase</h1>
+            <h2>by studio and friends</h2>
+            <p>Harvest Vases are a reinterpretation<br> of peeled fruits and vegetables as<br> functional objects. The surfaces<br> appear to be sliced and pulled aside,<br> allowing room for growth. </p>
+          </div>
+          <div class="product-price-btn">
+            <p><span>78</span>$</p>
+            <button type="button">buy now</button>
+          </div>
+        </div>
+      </div>
+    </td>
+
+    <td>
+      <title>Harvest vase</title>
+      <link href="https://fonts.googleapis.com/css?family=Bentham|Playfair+Display|Raleway:400,500|Suranna|Trocchi" rel="stylesheet">
+      <div class="wrapper">
+        <div class="product-img">
+          <img src="/img/rabbit.png" height="420" width="327">
+        </div>
+        <div class="product-info">
+          <div class="product-text">
+            <h1>Harvest Vase</h1>
+            <h2>by studio and friends</h2>
+            <p>Harvest Vases are a reinterpretation<br> of peeled fruits and vegetables as<br> functional objects. The surfaces<br> appear to be sliced and pulled aside,<br> allowing room for growth. </p>
+          </div>
+          <div class="product-price-btn">
+            <p><span>78</span>$</p>
+            <button type="button">buy now</button>
+          </div>
+        </div>
+      </div>
+    </td>
+  </tr>
+</table>
+    
+  
+  
+
+
+        
+
+        
+
 
 <!-- ============================================== F U L L . C O N T A C T ================================================== -->
 
 
-<div style="float:right;">
-  <p>hello</p>
-  <p>hello</p>
-  <p>hello</p>
-  <p>hello</p>
-  <p>hello</p>
-  <p>hello</p>
-  <p>hello</p>
-  <p>hello</p>
-  <p>hello</p>
-  <p>hello</p>
-  <p>hello</p>
-  <p>hello</p>
-  <p>hello</p>
-  <p>hello</p>
-  <p>hello</p>
-  <p>hello</p>
-  <p>hello</p>
-</div>
+
 
 
 
@@ -263,13 +431,6 @@
 
     <div class="footer">
         <p>Footer@.com/by.truongtanphat</p>
-<<<<<<< HEAD
-        <a class="acti" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
-        <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
-        <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
-        <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
-      </div>
-=======
     </div>
 
 
@@ -281,7 +442,6 @@
 
 
 
->>>>>>> bc4b9e2086c3ac2ecbe6966f3767c31ef13e54b3
 
 
 
@@ -344,10 +504,6 @@ for (i = 0; i < acc.length; i++) {
   })
 };
 
-// vẽ div kế logo
-function myFunction(x){
-  x.classList.toggle("change");
-}
 
             </script>
 </body>
