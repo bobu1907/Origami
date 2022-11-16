@@ -12,6 +12,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="footer.css">
+
 </head>
 <style>
 /* =============================== X ======================================== */
@@ -153,8 +158,8 @@ span {display: inline-block;height: 50px;font-family: 'Suranna', serif;font-size
                       <button class="clickMiniSb" style=" margin:10px ;">CHOOSE YOUR PAPER</button>
                           <div class="miniSb" >
                             <hr>
-                              <li class="pagemini"><a href="#/!" style="color:black">Origami Papers</a></li>
-                              <li class="pagemini"><a href="#!a" style="color:black">Amazing papers</a></li>
+                              <li class="pagemini"><a href="#!a" style="color:black">Origami Papers</a></li>
+                              <li class="pagemini"><a href="#!b" style="color:black">Amazing papers</a></li>
                               <li class="pagemini"><a href="#!b" style="color:black">3D Origami</a></li>
                               <li class="pagemini"><a href="#!b" style="color:black">By Colors</a></li>
                             <hr>
@@ -267,7 +272,7 @@ span {display: inline-block;height: 50px;font-family: 'Suranna', serif;font-size
 <img src="/img/poster.jpg" alt="" height="290px" width="400px">
 </div>
 
-
+<div ng-view></div>
 
 
           <div>
@@ -429,9 +434,69 @@ span {display: inline-block;height: 50px;font-family: 'Suranna', serif;font-size
 
 <!-- ============================================== F O O T E R  ================================================== -->
 
-    <div class="footer">
-        <p>Footer@.com/by.truongtanphat</p>
-    </div>
+<div class="container" style="position:absolute;top:3360px;left:0px" >
+  <section style="height:80px;"></section>
+<div class="row" style="text-align:center;">
+  
+</div>
+  <!----------- Footer ------------>
+  <footer class="footer-bs">
+      <div class="row">
+        <div class="col-md-3 footer-brand animated fadeInLeft">
+            <h2>Logo</h2>
+              <p>Suspendisse hendrerit tellus laoreet luctus pharetra. Aliquam porttitor vitae orci nec ultricies. Curabitur vehicula, libero eget faucibus faucibus, purus erat eleifend enim, porta pellentesque ex mi ut sem.</p>
+              <p>© 2022 GP2 UI Kit, All rights reserved</p>
+          </div>
+        <div class="col-md-4 footer-nav animated fadeInUp">
+            <h4>Menu —</h4>
+            <div class="col-md-6">
+                  <ul class="pages">
+                      <li><a href="#">Children</a></li>
+                      <li><a href="#">Adult</a></li>
+                      <li><a href="#">South</a></li>
+                      <li><a href="#">Female</a></li>
+                      <li><a href="#">SALE</a></li>
+                      <li><a href="#">Product</a></li>
+                      <li><a href="#">Color</a></li>
+                  </ul>
+              </div>
+            <div class="col-md-6">
+                  <ul class="list">
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Contacts</a></li>
+                      <li><a href="#">Terms & Condition</a></li>
+                      <li><a href="#">Privacy Policy</a></li>
+                  </ul>
+              </div>
+          </div>
+        <div class="col-md-2 footer-social animated fadeInDown">
+            <h4>Follow Us</h4>
+            <ul class="icon">
+                 <li><a href=""><ion-icon name="logo-facebook" style="color:dodgerblue"></ion-icon></a></li> 
+                <li> <a href=""> <ion-icon name="logo-twitter" style="color:cornflowerblue"></ion-icon></a></li>
+                <li><a href=""> <ion-icon name="logo-instagram" style="color:	#FF99FF"></ion-icon></a></li>
+                <li><a href=""> <ion-icon name="logo-youtube" style="color:#FF3333"></ion-icon></a></li>
+                  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+              </ul>
+          </div>
+        <div class="col-md-3 footer-ns animated fadeInRight">
+            <h4>Newsletter</h4>
+              <p>A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
+              <p>
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Subcribe me...">
+                    <span class="input-group-btn">
+                      <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
+                    </span>
+                  </div>
+                  <!-- /input-group -->
+               </p>
+          </div>
+      </div>
+  </footer>
+  <section style="text-align:center; margin:10px auto;"><p>Designed by <a href="http://enfoplus.net">TEAM2</a></p></section>
+
+</div>
 
 
 
@@ -454,9 +519,11 @@ span {display: inline-block;height: 50px;font-family: 'Suranna', serif;font-size
     var app = angular.module("myApp", ["ngRoute"]);
             app.config(function ($routeProvider){
                 $routeProvider
-                    .when("/", {templateUrl: "list.html"})
-                    .when("/b", {templateUrl: "addNewFood.html"})
-                    .when("/c", {templateUrl: "editFood.html"})
+                    .when("/a", {templateUrl: "slidebar/newpage.html"})
+                    .when("/b", {templateUrl: "slidebar/newpage.html"})
+                    .when("/c", {templateUrl: "slidebar/newpage.html"})
+                    .when("/d", {templateUrl: "slidebar/newpage.html"})
+                    
             });
             app.controller("myController",function($scope, $http){
                     $http.get("list.json").then(function(response){
