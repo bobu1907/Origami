@@ -15,7 +15,7 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="/footer/footer.css">
 
 </head>
 <style>
@@ -162,8 +162,8 @@
                             <hr>
                               <li class="pagemini"><a href="#!a" style="color:black">Origami Papers</a></li>
                               <li class="pagemini"><a href="#!b" style="color:black">Amazing papers</a></li>
-                              <li class="pagemini"><a href="#!b" style="color:black">3D Origami</a></li>
-                              <li class="pagemini"><a href="#!b" style="color:black">By Colors</a></li>
+                              <li class="pagemini"><a href="#!c" style="color:black">3D Origami</a></li>
+                              <li class="pagemini"><a href="#!d" style="color:black">By Colors</a></li>
                             <hr>
                           </div>
 
@@ -816,9 +816,9 @@ position:absolute;top:70px;left: 0px;">
             app.config(function ($routeProvider){
                 $routeProvider
                     .when("/a", {templateUrl: "slidebar/newpage.html"})
-                    .when("/b", {templateUrl: "slidebar/newpage.html"})
-                    .when("/c", {templateUrl: "slidebar/newpage.html"})
-                    .when("/d", {templateUrl: "slidebar/newpage.html"})
+                    .when("/b", {templateUrl: "slidebar/newpage2.html"})
+                    .when("/c", {templateUrl: "slidebar/newpage3.html"})
+                    .when("/d", {templateUrl: "slidebar/newpage4.html"})
                     
             });
             app.controller("myController",function($scope, $http){
