@@ -17,6 +17,15 @@ header{
     padding: 12px 50px;
     height: 70px;
     align-items: center;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background: rgba(255 , 255, 255, 0.3);
+}
+header:hover{
+    background: rgba(225, 225, 225, 1);
 }
 .logo{
     flex:1;
@@ -29,34 +38,37 @@ header{
     padding: 0 12px;
     position: relative;
     }
-    .menu > li:hover .sub-menu{
+.menu > li:hover .sub-menu{
         visibility: visible;
-       top:30px}
-    .sub-menu{
+       top:45px}        
+.sub-menu{
         position: absolute;
         width: 150px;
         border: 1px solid #CCC;
         padding:10px 0 10px 20px;
         visibility: hidden;
-        top:50px;
-        transition: 0.5s;
+        top:60px;
+        transition: 0.5s;   
+        z-index: 1;
+        background: #fff;
     }
-    .sub-menu ul{
+.sub-menu ul{
         padding-left: 20px;
     }
-    .sub-menu ul a {
-        font-size:12px;
-        font-weight: normal;
+.sub-menu ul a {
+        font-weight: normal !important;
+        font-size:12px !important;
+     
     }
-    .menu > li a{
+    .menu > li a {
         font-size: 12px;
-        font-weight: bold;
+        font-weight: bold !important;
         display: block;
         line-height: 20px;
     
     }
     .others{
-        flex:2;
+        flex:1;
         display:flex;
     }
     .others > li{
@@ -69,6 +81,8 @@ header{
         width: 100%;
         border: none;
         border-bottom:1px solid #3333;
+        background: transparent;
+        outline: none;
     }
     .others > li:first-child i{
         position: absolute;
@@ -114,4 +128,74 @@ overflow:hidden;
       }
       .dot.active{
         background-color: rgb(177, 238, 248);
+      }
+      /* --------------app-------------- */
+      .app-container{
+        text-align: center;
+        align-items: center;
+        padding: 150px 0 50px 0;
+      }
+      .app-google{
+        margin: 50px;
+      }
+      .app-google img {
+        height: 50px;
+      }
+      .app-container p {
+        line-height: 20px;
+        letter-spacing: 1px;
+        font-size: 17px;
+        color: #000;
+        font-weight: bold;
+      }
+      .app-container input{
+        margin-top:50px;
+        border:none;
+        border-bottom: 1px solid #000;
+        padding-bottom:20px;
+        width: 400px;
+        text-align: center;
+        outline:none;
+      }
+      /* --------------footer-------------- */
+      footer{
+        text-align: center;
+
+      }
+      .footer-top{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        height: 70px;
+      }
+      .footer-top img{
+        height: 50px;
+      }
+      .footer-top li {
+        padding: 0 12px ;
+        position: relative;
+      }
+      .footer-top li::after{
+        content:"";
+        display: block;
+        width: 1px;
+        height: 80%;
+        background: #CCCC;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .footer-top li:last-child:after{
+        display: none;
+      }
+      .footer-top li:last-child a{
+        margin-right: 12px;
+        color: blueviolet;
+      }    
+      .footer-center{
+        text-align: center;
+        margin:20px 0;
       }
