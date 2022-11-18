@@ -115,13 +115,15 @@
 
 <body ng-app="myApp">
   <div class="navbar">
+        <a href="#"><i class="glyphicon glyphicon-check"></i> Login</a>
     <p style=" font-size: 60px;" id="ori">            
       <strong style="padding:30px ;"><a href="" id="orii">
         origami</a></strong>
 </p>
+   
         <a href="#"><i class="glyphicon glyphicon-globe"></i> Contact</a>
         <a href="#"><i class="glyphicon glyphicon-check"></i> Login</a>
-         <img src="/img/quacau.png  " alt="" width="100px" height="100px" style="position:absolute;left:30px;top:20px;">
+   
          <p>
               
           <h2 style="margin-left: 20px; padding-left:125px;color: #ff9797;">welcome</h2>
@@ -132,7 +134,7 @@
       <div style="font-family:Copperplate,Copperplate Gothic Light,fantasy;font-size:15px;color:black ">
        <ul style="  list-style-type:none;border-top: 1px;
        border-bottom: 1px;">
-        <li style="display:inline-block; width:19%;"><a href="#" style="color:black">HOME</a></li>
+        <li style="display:inline-block; width:19%;"><a href="#!a" style="color:black">HOME</a></li>
         <li style="display:inline-block; width:19%;"><a href="#" style="color:black">PRODUCT</a></li>
         <li style="display:inline-block; width:19%;"><a href="#" style="color:black">CONTACT</a></li>
         <li style="display:inline-block; width:19%;"><a href="#" style="color:black">ABOUT ORIGAMI</a></li>
@@ -269,7 +271,9 @@
 
 
 
+   
 
+<!-- ============================================== VIEW ================================================== -->
 <div ng-view></div>
 
 
@@ -664,16 +668,12 @@ position:absolute;top:70px;left: 0px;">
 <!-- ============================================== F O O T E R  ================================================== -->
 
 <div class="container" style="position:absolute;top:6000px;left:0px;width:100%" >
+<!-- ============================================== F O O T E R  ================================================== -->
+<div class="container" style="width:100%" >
   <section style="height:80px;"></section>
 <div class="row" style="text-align:center;">
-  
-
-
-
-
-
 </div>
-  <!----------- Footer ------------>
+  
   <footer class="footer-bs">
       <div class="row">
         <div class="col-md-3 footer-brand animated fadeInLeft">
@@ -752,7 +752,7 @@ position:absolute;top:70px;left: 0px;">
     var app = angular.module("myApp", ["ngRoute"]);
             app.config(function ($routeProvider){
                 $routeProvider
-                    .when("/a", {templateUrl: "slidebar/newpage.html"})
+                    .when("/a", {templateUrl: "home/home.html"})
                     .when("/b", {templateUrl: "slidebar/newpage2.html"})
                     .when("/c", {templateUrl: "slidebar/newpage3.html"})
                     .when("/d", {templateUrl: "slidebar/newpage4.html"})
