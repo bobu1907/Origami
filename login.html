@@ -1,68 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <style>
-        h1{
-            color:rgb(243, 14, 83);
-        }
-        h5{
-            color:rgb(100, 100, 100);
-        }
-        body{
-   text-align: center;
-   border-style:groove;
-   background-color: rgb(255, 160, 82);
-}
-.sub{
-   text-align: center;
-}
 
+.table1{
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            border: unset;
+         }
+         th{
+            width: 200px;
+            text-align: center;
+         }
+         .field {
+    height: 60px;
+    margin: 10px 0;
+    width: 300px;
+    padding: 10px;
+    border-radius: 0;
+    display: block;
+    background: #fff;
+    border: 1px solid #e5e7ea;
+}
     </style>
-</head>
-<body>
-    <tr>
-    <h1>Đăng Ký </h1>
-    <table>
-        <div style="position:absolute;top:15px;right:15px">
-            <img src="/Quả Cầu.jpg" width="60px" height="60px" alt="">
-        </div>
-        
-<form action="/action_page.php" >
-  <label for="Tên truy cập"></label>
-  
-  <input  onfocus ="showStyle(this) "
-  placeholder="Tên truy cập"><br><br>
 
-  <label for="pwd"></label>
-  <input onfocus="showStyle(this)"placeholder="Mật Khẩu"
-  type="password" id="pwd" name="pwd" minlength="8"><br><br>
-  
-  <label for="Email"></label>
-  <input  onfocus ="showStyle(this) "
-  placeholder="Email"><br>
-  <span><h5>Bạn cần sử dụng email này trong trường 
-    <br> hợp cần đặt lại mật khẩu!!</span></h5>
-
-    <label for="Số điện thoại"></label>
-  
-  <input text="number" 
-  placeholder="Số điện thoại"><br><br>
-  <br>
-   <tr>
-    <th >
-        
-        <input type="submit" value="sumbit">
-        <input type="reset"></th></tr></div>
-  <span ></span>
-</table>
- 
-
-  
-</form>
-    </tr>
-</body>
-</html>
+    <div class="nav">
+        <form action="">
+            <table class="table1">
+                
+                <tr>
+                    <td colspan="2" style="padding-top: 20px;"><input id="first-name-signup" name="fn" type="text" required="" autocomplete="true" class="field" value="" placeholder="First Name*" aria-labelledby="first-name-signup-label" placeholder-i18next-orgval=" " localized=""></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input id="last-name-signup" name="ln" type="text" required="" autocomplete="true" class="field" value="" placeholder="Last Name*" aria-labelledby="first-name-signup-label" placeholder-i18next-orgval=" " localized=""></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input id="email-signup" name="e" type="email" required="" autocomplete="true" class="field" value="" placeholder="Email Address*" aria-labelledby="first-name-signup-label" placeholder-i18next-orgval=" " localized=""></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input id="password-signup" name="pw" type="password" required="" autocomplete="true" class="field" value="" placeholder="Password*" aria-labelledby="first-name-signup-label" placeholder-i18next-orgval=" " localized=""></td>
+                </tr>
+                <tr>
+                    <td>
+                        <button style="background-color: black; color: white;" class="field">Login</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
