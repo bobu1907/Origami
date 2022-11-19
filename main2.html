@@ -34,11 +34,6 @@
 
 /* ========================================================================================================== */
 
-#ori { width: 108px; height: 90px; background: rgb(157, 53, 53); transition: width 0.5s;margin-left:5px; }
-#ori:hover { width: 285px; height: 90px; background-color: #f27d7d;}
-#orii {text-decoration: none; color: rgb(0, 0, 0);}
-#orii:hover {text-decoration: none; color: #ddd;}
-
 #mySearch {width: 100%;font-size: 19px;padding: 11px;border: 1px solid #ddd; margin-left:10px; }
 
 /* ============================================= H E A D E R ============================================= */
@@ -64,17 +59,6 @@
 .footer {position:fixed;left:20.2%;bottom:0;top:95%;right:0; width:100%;background-color: rgb(0, 0, 0);color: white;text-align: center;}
 
 
-/* ======================================================== M I N I - S B ======================================================================= */
-
-/* Style the buttons that are used to open and close the accordion panel */
-.clickMiniSb {background-color: rgb(201, 183, 183);color: rgb(0, 0, 0);cursor: pointer;padding: 18px;width: 100%;text-align: left;border: none;
-  outline: none;transition: 0.4s;}
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .clickMiniSb:hover {background-color: rgb(198, 110, 102)}
-/* Style the accordion panel. Note: hidden by default */
-.miniSb {padding: 0 18px;background-color: white;max-height: 0;overflow: hidden;transition: max-height 0.2s ease-out;}
-.pagemini {text-decoration: none;display: block;}
-
 /* /* ============================================== P R O D U C T - C A R D ============================================================================ */
 
 
@@ -98,35 +82,94 @@
   box-sizing: border-box;border: transparent;border-radius: 60px;font-family: 'Raleway', sans-serif;font-size: 14px;font-weight: 500;
   text-transform: uppercase;letter-spacing: 0.2em;color: #ffffff;background-color: #9cebd5;cursor: pointer;outline: none;}
 .product-price-btn button:hover {background-color: #79b0a1;}
+/* ======================================================================== */
+.khoi-slide {
+   width: 100%;
+   height: 700px;
+   position: relative;
+}
+img {
+   width: 100%;
+}
+.cac-slide {
+   width: 100%;
+   height: 700px;
+   overflow: hidden;
+}
+.slide {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   opacity: 0;
+   visibility: hidden;
+}
+.slide.active{
+   opacity: 1;
+   visibility: visible;
+}
+.nut-slide span{
+   color: white;
+   font-size: 60px;
+   opacity: 0.6;
+}
+span#btn-prev{
+   position: absolute;
+   top: 30%;
+   left: 0%;
+   z-index: 10;
+   cursor: pointer;
+}
+span#btn-next{
+   position: absolute;
+   top: 30%;
+   right: 0%;
+   z-index: 10;
+   cursor: pointer;
+}
+.nut-slide ul {
+   position: absolute;
+   z-index: 10;
+   width: 100px;
+   bottom: 25%;
+   left: 50%;
+   margin-left: -50px;
+   display: flex;
+   justify-content: space-between;
+}
+.nut-slide ul li {
+   width: 20px;
+   height: 20px;
+   background: white;
+   opacity: 0.6;
+   list-style: none;
+   border-radius: 50%;
+   cursor: pointer;
+   transition: 0.6s;
+}
+
     </style>
 </head>
 <body ng-app="myApp">
     <div class="navbar">
-        <a href="#"><i class="glyphicon glyphicon-check"></i> Login</a>
-    <p style=" font-size: 60px;" id="ori">            
-      <strong style="padding:30px ;"><a href="" id="orii">
-        origami</a></strong>
-</p>
-   
-        <a href="#"><i class="glyphicon glyphicon-globe"></i> Contact</a>
-        <a href="#"><i class="glyphicon glyphicon-check"></i> Login</a>
+        <a href="#"><i class="glyphicon glyphicon-check"></i> Login</a> 
+        <a href="#"><i class="glyphicon glyphicon-globe"></i> Sigh up</a>
+
    
          <p>
               
-          <h2 style="margin-left: 20px; padding-left:125px;color: #ff9797;">welcome</h2>
+          <h2 style="margin-left: 20px; padding-left:125px;color: #ff9797;">O R I G A M I</h2>
       </p>
       </div>
     
  <!-- ======================================= NAVIGATION BAR ============================================================= -->
       <div style="font-family:Copperplate,Copperplate Gothic Light,fantasy;font-size:15px;color:black ">
-       <ul style="  list-style-type:none;border-top: 1px;
-       border-bottom: 1px;">
+       <ul style="  list-style-type:none;border-top: 1px;border-bottom: 1px;">
         <li style="display:inline-block; width:19%;"><a href="#!a" style="color:black">HOME</a></li>
         <li style="display:inline-block; width:19%;"><a href="#" style="color:black">PRODUCT</a></li>
         <li style="display:inline-block; width:19%;"><a href="#" style="color:black">CONTACT</a></li>
         <li style="display:inline-block; width:19%;"><a href="#" style="color:black">ABOUT ORIGAMI</a></li>
-       
-        <li style="display:inline-block; width:19%;"><input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search..." title="Type in a category"></li>
+        <li style="display:inline-block; width:19%;"><input type="text" id="mySearch" onkeyup="myFunction()" 
+          placeholder="Search..." title="Type in a category"></li>
       </ul>
       </div>
       <!-- ============================================== VIEW ================================================== -->
