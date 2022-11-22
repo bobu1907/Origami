@@ -88,7 +88,8 @@
   display: block;
   bottom: 0;
   text-align: left;
-  font-weight: 300;
+  font-weight: 50px;
+  font-size: large;
   top: 0%;
   color: #000;
   background: #ffffff;
@@ -219,7 +220,8 @@
     display: block;
     bottom: 0;
     text-align: right;
-    font-weight: 300;
+    font-weight: 50px;
+    font-size: large;
     top: 0%;
     color: #000;
     background: #ffffff;
