@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCT LIST</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            font-family: 'Metal Mania';
+            font-size: 14px;
+            color:#111;
+            line-height: 1.15;
+        }
+        #wrapper{
+            max-width: 1170px;
+            margin:0 auto;
+        }
+        .headline{
+            text-align: center;
+            margin:40px 0px;
+        }
+        h3{
+            font-size: 18px;
+            color: rgb(6, 6, 6);
+            padding: 10px 20px;
+            text-transform: uppercase;
+            border:1px solid #fffdfd;
+            display: inline-block;
+            color:rgb(255, 252, 252);
+            font-weight: 600;
+            background-color:#020000;
+        }
+        ul.products{
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        ul.products li{
+            flex-basis: 25%;
+            padding-left: 15px;
+            padding-right: 15px;
+            box-sizing: border-box;
+            margin-bottom: 30px;
+        }
+        ul.products li img{
+            max-width: 100%;
+            height: auto;
+        }
+        ul.products li .product-top{
+            position: relative;
+            overflow: hidden;
+        }
+        
+        ul.products li .product-top .product-thumb{
+            display: block;
+        }
+        ul.products li:hover .product-top .product-thumb img{
+            filter: opacity(80%);
+        }
+        ul.products li .product-top .product-thumb img{
+            display: block;
+        }
+        ul.products li .product-top a.buy-now{
+            text-transform: uppercase;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            background-color: #060607;
+            color:#fff;
+            padding: 10px 0px;
+            position: absolute;
+            bottom: -36px;
+            width: 100%;
+            transition: 0.25s ease-in-out;
+            opacity: 0.85;
+        }
+        ul.products li:hover a.buy-now{
+            bottom: 0px;
+        }
+        ul.products li .product-info{
+            padding: 10px 0px;
+        }
+        ul.products li .product-info a{
+             display: block;
+             text-decoration: none;
+        }
+        ul.products li .product-info a.product-cat{
+            font-size: 20px;
+            text-transform: uppercase;
+            color:#000000;
+            padding: 5px 0px;
+        }
+        ul.products li .product-info a.product-name{
+            color:#090404;
+            padding: 3px 0px;
+            font-size: 18px;
+        }
+        ul.products li .product-info .product-price{
+            color:rgb(254, 254, 254);
+            padding: 2px 0px;
+            font-size: 900;
+        }
+        body{
+            min-height: 1000px;
+        }
+        h2{
+            padding: 50px;
+            color:#fff;
+        }
+        section{
+            margin-top:200px;
+            position:relative;
+            width: 100%;
+            height: 200px;
+            background: url(history3.jpg);
+            background-attachment: fixed;
+        }
+        h2{
+            color:rgb(255, 255, 255);
+            font-size: 30px;
+        }
+        
+    </style>
+    <body background="history3.jpg">
+    <section>
+        <h2 >History:Origami since its appearance has become a favorite traditional entertainment of the Japanese people and gradually gained popularity around the world. With just a small square sheet of paper, you can completely fold into many different shapes such as cute animals or beautiful flowers. Because this origami material is quite simple, it can be easily taken anywhere. A lot of Japanese people love this game at home as well as at school.</h2>
+ 
+    <img src="hylapco.jpg" height="1029px">
+    
+    <div id="wrapper">
+        <div class="headline">
+            <h3>Hot Selling Products</h3>
+        </div>
+        <ul class="products">
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="800.jpg" alt="">
+                    </a>
+                    <a href="" class="buy-now">Buy</a>
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">Origami</a>
+                    <a href="" class="product-name">Vatar</a>
+                    <div class="product-price">$100,999</div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="800p.jpg" alt="" >
+                    </a>
+                    <a href="" class="buy-now">Buy</a>
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">Origami</a>
+                    <a href="" class="product-name">Demon</a>
+                    <div class="product-price">$999,999</div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="800px.jpg" alt="">
+                    </a>
+                    <a href="" class="buy-now">Buy</a>
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">Origami</a>
+                    <a href="" class="product-name">Katarina</a>
+                    <div class="product-price">$212,999</div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="800pxx.jpg" alt="">
+                    </a>
+                    <a href="" class="buy-now">Buy</a>
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">Origami</a>
+                    <a href="" class="product-name">Amumu</a>
+                    <div class="product-price">$223,999</div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="800pxxx.jpg" alt="">
+                    </a>
+                    <a href="" class="buy-now">Buy</a>
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">Origami</a>
+                    <a href="" class="product-name">Vinola</a>
+                    <div class="product-price">$276,999</div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="800pxxxx.jpg" alt="">
+                    </a>
+                    <a href="" class="buy-now">Buy</a>
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">Origami</a>
+                    <a href="" class="product-name">Himana</a>
+                    <div class="product-price">$23,999</div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="800pxxxxx.jpg" alt="">
+                    </a>
+                    <a href="" class="buy-now">Buy</a>
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">Origami</a>
+                    <a href="" class="product-name">Takari</a>
+                    <div class="product-price">$24,999</div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="800pxxxxxx.jpg" alt="">
+                    </a>
+                    <a href="" class="buy-now">Buy</a>
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">Origami</a>
+                    <a href="" class="product-name">Lucki</a>
+                    <div class="product-price">$99,999</div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="800xxxxxxxx.webp" alt="">
+                    </a>
+                    <a href="" class="buy-now">Buy</a>
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">Origami</a>
+                    <a href="" class="product-name">Lucki</a>
+                    <div class="product-price">$99,999</div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="800xxxxxxx.jpg" alt="">
+                    </a>
+                    <a href="" class="buy-now">Buy</a>
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">Origami</a>
+                    <a href="" class="product-name">Lucki</a>
+                    <div class="product-price">$99,999</div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="800xxxxx.jpg" alt="">
+                    </a>
+                    <a href="" class="buy-now">Buy</a>
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">Origami</a>
+                    <a href="" class="product-name">Lucki</a>
+                    <div class="product-price">$99,999</div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="800xxxxxx.jpg" alt="">
+                    </a>
+                    <a href="" class="buy-now">Buy</a>
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">Origami</a>
+                    <a href="" class="product-name">Lucki</a>
+                    <div class="product-price">$99,999</div>
+                </div>
+            </li>
+            
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="800xxxx.jpg" alt="">
+                    </a>
+                    <a href="" class="buy-now">Buy</a>
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">Origami</a>
+                    <a href="" class="product-name">Lucki</a>
+                    <div class="product-price">$99,999</div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="800xxx.jpg" alt="">
+                    </a>
+                    <a href="" class="buy-now">Buy</a>
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">Origami</a>
+                    <a href="" class="product-name">Lucki</a>
+                    <div class="product-price">$99,999</div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="800xx.jpg" alt="">
+                    </a>
+                    <a href="" class="buy-now">Buy</a>
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">Origami</a>
+                    <a href="" class="product-name">Lucki</a>
+                    <div class="product-price">$99,999</div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="800x.jpg" alt="">
+                    </a>
+                    <a href="" class="buy-now">Buy</a>
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">Origami</a>
+                    <a href="" class="product-name">Lucki</a>
+                    <div class="product-price">$99,999</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</section>
+</body>
+</html>
