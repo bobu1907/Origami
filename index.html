@@ -104,7 +104,7 @@
  <!-- ======================================= NAVIGATION BAR ============================================================= -->
       <div style="font-family:Copperplate,Copperplate Gothic Light,fantasy;font-size:15px;color:black ">
        <ul style="  list-style-type:none;border-top: 1px;border-bottom: 1px;">
-        <li style="display:inline-block; width:19%;"><a href="#!a" style="color:black">HOME</a></li>
+        <li style="display:inline-block; width:19%;"><a href="#/!" style="color:black">HOME</a></li>
         <li style="display:inline-block; width:19%;"><a href="#!b" style="color:black">PRODUCT</a></li>
         <li style="display:inline-block; width:19%;"><a href="#" style="color:black">CONTACT</a></li>
         <li style="display:inline-block; width:19%;"><a href="#" style="color:black">ABOUT ORIGAMI</a></li>
@@ -209,8 +209,10 @@
     var app = angular.module("myApp", ["ngRoute"]);
             app.config(function ($routeProvider){
                 $routeProvider
-                    .when("/a", {templateUrl: "home/home.html"})
+                    .when("/", {templateUrl: "home/home.html"})
+                    .when("/a", {templateUrl: "product/sale.especially2.html"})
                     .when("/b", {templateUrl: "product/sale.html"})
+                    .when("/c", {templateUrl: "product/sale.luxury.html"})
                     .when("/j", {templateUrl: "product/human.html"})
                     .when("/k", {templateUrl: "product/animal.html"})
                     .when("/l", {templateUrl: "product/plant.html"})
