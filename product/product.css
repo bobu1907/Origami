@@ -1,0 +1,23 @@
+.col-md-3:hover .buy{
+    bottom:0px ;
+ }
+ .buy {
+    text-transform:uppercase;text-decoration:none;text-align: center;display: block;background-color:white;width:97%;height:60px;position: absolute;bottom: -500px;transition: 0.35s ease-in-out;
+
+ }
+.buy a {
+    text-decoration: none;
+    color:darkgoldenrod
+}
+.buy1 a {
+    text-decoration: none;
+    color:darkgoldenrod
+}
+
+.col-md-2:hover .buy1{
+    bottom:0px ;
+ }
+ .buy1 {
+    text-transform:uppercase;text-decoration:none;text-align: center;display: block;background-color:white;width:81.5%;position: absolute;bottom: -500px;transition: 0.35s ease-in-out;
+font-family: serif;
+ }
