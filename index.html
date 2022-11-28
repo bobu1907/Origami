@@ -139,7 +139,7 @@
                       <li><a href="#">South</a></li>
                       <li><a href="#">Female</a></li>
                       <li><a href="#">SALE</a></li>
-                      <li><a href="#">Product</a></li>
+                      <li><a href="#!bLog">Blog</a></li>
                       <li><a href="#">Color</a></li>
                   </ul>
               </div>
@@ -218,6 +218,8 @@
                     .when("/k", {templateUrl: "product/animal.html"})
                     .when("/l", {templateUrl: "product/plant.html"})
                     .when("/singleProduct", {templateUrl: "content/singleProduct/page1.html"})
+                    .when("/back", {templateUrl: "product/sale.html"})
+                    .when("/bLog", {templateUrl: "home/blog.html"})
                     
             });
             app.controller("myController",function($scope, $http){
@@ -230,7 +232,7 @@
 
 // mini SB
 
-    function myFunction() {
+    function myFunction(){
       // Declare variables
       var input, filter, ul, li, a, i;
       input = document.getElementById("mySearch");
