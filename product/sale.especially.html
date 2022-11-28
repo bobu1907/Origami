@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dánh Sách Sản Phẩm</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+        *{
+            padding:0;
+            margin:0;
+        }
+        body{
+            font-family: 'Metal Mania';
+            font-size: 14px;
+            color:darkgrey;
+            line-height: 1.15;
+            min-height: 1000px;
+        }
+        #wrapper{
+            max-width: 1165px;
+            margin:auto
+        }
+        .headline{
+            text-align: center;
+            margin: 40px 0px;
+        }
+        h3{
+            background-color: rgb(8, 6, 6);
+            font-size:18px;
+            Color:#fff;
+            padding:10px 20px;
+            text-transform: uppercase;
+            border:1px solid #bebebe;
+            display: inline-block;
+            color:rgb(255, 253, 253);
+            font-weight: 600;
+        }
+        h4{
+            color: aliceblue;
+        }
+        ul.products{
+            list-style: none;
+            display: flex;
+            flex-wrap:wrap;
+            justify-content: space-between;
+        }
+        ul.products.li{
+            padding-left: 15px;
+            padding-right: 15px;
+            flex-basis: 25%;
+            box-sizing: border-box;
+            margin-bottom: 30px;
+        }
+        ul.products li img{
+            max-width: 100%;
+            height:300px;
+
+        }
+        ul.products li.product-top{
+            position: relative;
+            overflow:hidden;    
+        }
+        ul.products li.product-top .product-thumb{
+            display: block;
+        }
+        ul.products li:hover .product-top .product-thumb img{
+            filter: opacity(80%);
+        }
+        ul.products li.product-top .product-thumb img{
+            display: block;
+        }
+        ul.products li.product-info a.buy-now{
+            text-transform: uppercase;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            background-color: #446084;
+            color:#fff;
+            padding: 10px 0px;
+            position: absolute;
+            bottom:-36px;
+            width: 100%;
+            transition: 0.25s ease-in-out;
+            opacity: 0.85;
+        }
+        ul.products li:hover a.buy-now{
+            bottom:0px
+        }
+        .buy-now{
+            color:rgb(163, 255, 49)
+            
+        }
+        ul.products li.product-info{
+            padding:10px 0px;
+        }
+        ul.products li.product-info a{
+          display:block;
+          text-decoration: none;
+        }
+        ul.products li.product-info a.product-cat{
+            font-size: 11px;
+            text-transform: uppercase;
+            color:#090505;
+            padding: 3px 0px;
+        }
+        ul.products li.product-info a.product-name{
+            color:#334862;
+            padding: 3px 0px;
+        }
+        ul.products li.product-info .product-price{
+            color: #111;
+            padding:2px 0px;
+            font-weight: 600;
+            
+        }
+        .product-price{
+            color:rgb(108, 253, 41)
+        }
+        .hehe{
+           margin-top: 200px;
+           position:relative;
+           width: 100%;
+           height: 100px;
+           background: url(history.jpg);
+           background-attachment: fixed;
+        }
+        h1{
+            color:rgb(219, 216, 216)
+        }
+        
+    </style>
+      <body class="hehe" background="history.jpg">
+       <h1> History:
+        Paper sorting has been around for the first century or the second in China.Later, this paper sorting art spread to Japan in the 6th century and gradually became a unique art of Japan.<br>
+        Traditional Japanese origami may be used for rituals, such as noshi (Muromachi dynasty 1392–1573)</h1>
+        <img src="hylapco.jpg" height="900px" width="1470px"><br>
+      
+        <div id="wrapper">
+       <div class="headline">
+          <h3>Hot Selling Products</h3>
+       </div>
+       <ul class="products">
+        <li>
+            
+            <div class="product-item">
+              <div class="product-top">
+                 <a href="" class="products-thumb">
+                      <img src="Sĩ.jpg" alt="">
+                 </a><br>
+                 <a href="" class="buy-now">BUY</a>
+             </div>
+             <div class="product-info">
+                <h4 class="category-name">Origami Animals</h4>
+             <h4 class="product-name">Greek valor</h4>
+             <div class="product-price">$99,999,00</div>
+            </div>
+        </div>
+        <li>
+    <div class="products-item">
+<div class="products-top">
+<a href="" class="products-thumb">
+<img src="gra.jpg" alt="">
+</a><br>
+<a href="" class="buy-now">BUY</a>
+</div>
+<div class="products-info">
+    <h4 class="category-name">Origami Animals</h4>
+    <h4 class="product-name">Achilles</h4>
+<div class="product-price">$80,759,00</div>
+</div>
+    </div>
+</li>
+<li>
+    <div class="products-item">
+<div class="products-top">
+<a href="" class="products-thumb">
+<img src="Meow.jpg" alt="">
+</a><br>
+<a href="" class="buy-now">BUY</a>
+</div>
+<div class="products-info">
+    <h4 class="category-name">Origami Animals</h4>
+    <h4 class="product-name">Baltazar</h4>
+<div class="product-price">$5,00,00</div>
+</div>
+    </div>
+</li>
+<li>
+    <div class="products-item">
+<div class="products-top">
+<a href="" class="products-thumb">
+<img src="QuáiThú.jpg" alt="">
+</a><br>
+<a href="" class="buy-now">BUY</a>
+</div>
+<div class="products-info">
+    <h4 class="category-name">Origami Animals</h4>
+    <h4 class="product-name">Beowulf</h4>
+<div class="product-price">$78,54,00</div>
+</div>
+    </div>
+</li>
+<li>
+    <div class="products-item">
+<div class="products-top">
+<a href="" class="products-thumb">
+<img src="ngchim.jpg" alt="">
+</a><br>
+<a href="" class="buy-now">BUY</a>
+</div>
+<div class="products-info">
+    <h4 class="category-name">Origami Animals</h4>
+    <h4 class="product-name">Damon</h4>
+<div class="product-price">$69,99,99</div>
+</div>
+    </div>
+</li>
+<li>
+    <div class="products-item">
+<div class="products-top">
+<a href="" class="products-thumb">
+<img src="ngngua.jpg" alt="" >
+</a><br>
+<a href="" class="buy-now">BUY</a>
+</div>
+<div class="products-info">
+    <h4 class="category-name">Origami Animals</h4>
+    <h4 class="product-name">Dionisio</h4>
+<div class="product-price">$10,00,00</div>
+</div>
+    </div>
+</li>
+<li>
+    <div class="products-item">
+<div class="products-top">
+<a href="" class="products-thumb">
+<img src="Titan.jpg" alt="">
+</a><br>
+<a href="" class="buy-now">BUY</a>
+</div>
+<div class="products-info">
+    <h4 class="category-name">Origami Animals</h4>
+    <h4 class="product-name">Dylan</h4>
+<div class="product-price">$54,22,00</div>
+</div>
+</div>
+</li>
+<li>
+    <div class="products-item">
+<div class="products-top">
+<a href="" class="products-thumb">
+<div class="j">
+    <img src="Titan.jpg" alt="">
+</div>
+</a><br>
+<a href="" class="buy-now">BUY</a>
+</div>
+<div class="products-info">
+    <h4 class="category-name">Origami Animals</h4>
+    <h4 class="product-name">Govannon</h4>
+<div class="product-price">$65,88,79</div>
+</div>
+</div>
+<li>
+    <div class="products-item">
+<div class="products-top">
+<a href="" class="products-thumb">
+<img src="thehero.jpg" alt="">
+</a><br>
+<a href="" class="buy-now">BUY</a>
+</div>
+<div class="products-info">
+    <h4 class="category-name">Origami Animals</h4>
+    <h4 class="product-name">Gawain</h4>
+<div class="product-price">$32,54,00</div>
+</div>
+</div>
+<li>
+    <div class="products-item">
+<div class="products-top">
+<a href="" class="products-thumb">
+<img src="Themon.jpg" alt="">
+</a><br>
+<a href="" class="buy-now">BUY</a>
+</div>
+<div class="products-info">
+    <h4 class="category-name">Origami Animals</h4>
+    <h4 class="product-name">Hector</h4>
+<div class="product-price">$88,45,32</div>
+</div>
+</div>
+<li>
+    <div class="products-item">
+<div class="products-top">
+<a href="" class="products-thumb">
+<img src="LoaiThần.jpg" alt="">
+</a><br>
+<a href="" class="buy-now">BUY</a>
+</div>
+<div class="products-info">
+    <h4 class="category-name">Origami Animals</h4>
+    <h4 class="product-name">Hermes</h4>
+<div class="product-price">$46,55,55</div>
+</div>
+</div>
+<li>
+    <div class="products-item">
+<div class="products-top">
+<a href="" class="products-thumb">
+<img src="ThầnChim.jpg" alt="">
+</a><br>
+<a href="" class="buy-now">BUY</a>
+</div>
+<div class="products-info">
+    <h4 class="category-name">Origami Animals</h4>
+    <h4 class="product-name">Jason</h4>
+<div class="product-price">$88,88,88</div>
+</div>
+</div>
+
+<!-- <li>
+    <div class="products-item">
+<div class="products-top">
+<a href="" class="products-thumb">
+<img src="ThầnMặtTrời.jpg" alt="">
+</a><br>
+<a href="" class="buy-now">BUY</a>
+</div>
+<div class="products-info">
+    <h4 class="category-name">Origami Animals</h4>
+    <h4 class="product-name">Leandro </h4>
+<div class="product-price">$19,999,90</div>
+</div>
+</div>
+<li>
+    <div class="products-item">
+<div class="products-top">
+<a href="" class="products-thumb">
+<img src="ThầnChim.jpg" alt="">
+</a><br>
+<a href="" class="buy-now">BUY</a>
+</div>
+<div class="products-info">
+    <h4 class="category-name">Origami Animals</h4>
+    <h4 class="product-name">Odysseus</h4>
+<div class="product-price">$69,699,00</div>
+</div> -->
+</div>
+</body>
+</body>
+</html>
