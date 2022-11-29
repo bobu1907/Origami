@@ -160,8 +160,8 @@ figure.effect-duke:hover p {
 /*---------------------------------------------------------------------------------------------*/
 
 figure.effect-jazz {
-  background: -webkit-linear-gradient(-45deg, #f3cf3f 0%,#f33f58 100%);
-  background: linear-gradient(-45deg, #f3cf3f 0%,#f33f58 100%);
+  background: -webkit-linear-gradient(-45deg, #266cdb 0%,#8c155f 100%);
+  background: linear-gradient(-45deg, #00e1ff 0%,#ff4ce4 100%);
 }
 
 figure.effect-jazz img {
@@ -199,7 +199,7 @@ figure.effect-jazz p {
 }
 
 figure.effect-jazz h2 {
-  padding-top: 5%;
+  margin-top: 0px;
   -webkit-transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
 }
@@ -221,6 +221,7 @@ figure.effect-jazz:hover figcaption::after {
   opacity: 1;
   -webkit-transform: rotate3d(0,0,1,45deg) scale3d(1,1,1);
   transform: rotate3d(0,0,1,45deg) scale3d(1,1,1);
+  
 }
 
 figure.effect-jazz:hover h2,
@@ -228,6 +229,8 @@ figure.effect-jazz:hover p {
   opacity: 1;
   -webkit-transform: scale3d(1,1,1);
   transform: scale3d(1,1,1);
+  margin-right: 40px;margin-left: 40px;
+  font-weight:900;
 }
 
 
