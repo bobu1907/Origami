@@ -199,7 +199,7 @@ figure.effect-jazz p {
 }
 
 figure.effect-jazz h2 {
-  padding-top: 26%;
+  padding-top: 5%;
   -webkit-transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
 }
@@ -240,7 +240,7 @@ figure.effect-jazz:hover p {
 /*---------------------------------------------------------------------------------------------*/
 
 figure.effect-apollo {
-  background: #ffdac3;
+  background: #926060;
 }
 
 figure.effect-apollo img {
