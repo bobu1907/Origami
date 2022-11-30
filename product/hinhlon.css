@@ -37,7 +37,7 @@
   }
   
   .containers:hover .tile {
-    top: 0;
+    top: 350px;
     text-align: center;
   }
   
