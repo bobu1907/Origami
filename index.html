@@ -99,25 +99,18 @@
         <a href="#"><i class="glyphicon glyphicon-check"></i> Login</a> 
         <a href="#"><i class="glyphicon glyphicon-globe"></i> Sigh up</a>
 
-   
-         <p>
-              
-          <h2 style="margin-bottom: 0px; padding-left:100px;color: #15873d;">O R I G A M I</h2>
+      <p>
+        <h2 style="margin-bottom: 0px; padding-left:100px;color: #15873d;">O R I G A M I</h2>
       </p>
       </div>
-    
+
  <!-- ======================================= NAVIGATION BAR ============================================================= -->
       <div style="font-family:Copperplate,Copperplate Gothic Light,fantasy;font-size:15px;color:black ">
        <ul style="  list-style-type:none;border-top: 1px;border-bottom: 1px;">
         <li style="display:inline-block; width:19%; padding-left:50px;"><a href="#/!" style="color:black">HOME</a></li>
         <li style="display:inline-block; width:19%;"><a href="#!b" style="color:black">PRODUCT</a></li>
-<<<<<<< HEAD
         <li style="display:inline-block; width:19%;"><a href="#" style="color:black">CONTACT</a></li>
         <li style="display:inline-block; width:19%;"><a href="#allAbout" style="color:black">ABOUT ORIGAMI</a></li>
-=======
-        <li style="display:inline-block; width:19%;"><a href="#!c" style="color:black">CONTACT</a></li>
-        <li style="display:inline-block; width:19%;"><a href="#!a" style="color:black">ABOUT ORIGAMI</a></li>
->>>>>>> e49da94afc08465bdc5c3b7523c4c63c9532d889
         <li style="display:inline-block; width:19%;"><input type="text" id="mySearch" onkeyup="myFunction()" 
           placeholder="Search..." title="Type in a category"></li>
       </ul>
@@ -238,11 +231,10 @@
 
 
                     .when("/back", {templateUrl: "product/sale.html"})
+
+
                     // blog page
                     .when("/bLog", {templateUrl: "home/blog.html"})
-<<<<<<< HEAD
-
-=======
                     .when("/blogPage1", {templateUrl: "home/blog.page/blogPage1.html"})
                     .when("/blogPage2", {templateUrl: "home/blog.page/blogPage2.html"})
                     .when("/blogPage3", {templateUrl: "home/blog.page/blogPage3.html"})
@@ -258,7 +250,6 @@
                     .when("/allBlog", {templateUrl: "home/allBlog.html"})
                     // $$$
                     
->>>>>>> e49da94afc08465bdc5c3b7523c4c63c9532d889
             });
             app.controller("myController",function($scope, $http){
                     $http.get("list.json").then(function(response){
