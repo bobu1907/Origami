@@ -312,6 +312,11 @@ width: 98%;
 border: 7px solid rgb(255, 93, 93);
 z-index: -1;
 }
+#contact .contact{
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 /* Keyframes */
 @keyframes text_reveal_box{
     50%{
