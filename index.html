@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="product/product.css">
     <link rel="stylesheet" href="product/product1.css">
+    <link rel="stylesheet" href="product/hinhlon.css">
    
     <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet prefetch" href="https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css">
@@ -28,7 +29,10 @@
    
    <style>
         
-
+/* =====================================back============================================================ */
+#back #goneDiv:hover{background-color: #99d3ff;transition:1s;width:10px;border-radius: 100px;}
+#back p{background-color: #c3e5ff; }
+#back p:hover{background-color: rgb(255, 255, 255);transition:1s;}
 /* ========================================================================================================== */
 
 #mySearch {width: 100%;font-size: 19px;padding: 11px;border: 1px solid #ddd; margin-left:10px; }
@@ -107,8 +111,8 @@
        <ul style="  list-style-type:none;border-top: 1px;border-bottom: 1px;">
         <li style="display:inline-block; width:19%; padding-left:50px;"><a href="#/!" style="color:black">HOME</a></li>
         <li style="display:inline-block; width:19%;"><a href="#!b" style="color:black">PRODUCT</a></li>
-        <li style="display:inline-block; width:19%;"><a href="#" style="color:black">CONTACT</a></li>
-        <li style="display:inline-block; width:19%;"><a href="#" style="color:black">ABOUT ORIGAMI</a></li>
+        <li style="display:inline-block; width:19%;"><a href="#!c" style="color:black">CONTACT</a></li>
+        <li style="display:inline-block; width:19%;"><a href="#!a" style="color:black">ABOUT ORIGAMI</a></li>
         <li style="display:inline-block; width:19%;"><input type="text" id="mySearch" onkeyup="myFunction()" 
           placeholder="Search..." title="Type in a category"></li>
       </ul>
@@ -213,13 +217,37 @@
                     .when("/", {templateUrl: "home/home.html"})
                     .when("/a", {templateUrl: "product/sale.DTTL.html"})
                     .when("/b", {templateUrl: "product/sale.html"})
-                    .when("/c", {templateUrl: "product/sale.luxury.html"})
+                    .when("/c", {templateUrl: "header/contactUs.html"})
                     .when("/j", {templateUrl: "product/human.html"})
                     .when("/k", {templateUrl: "product/animal.html"})
                     .when("/l", {templateUrl: "product/plant.html"})
                     .when("/singleProduct", {templateUrl: "content/singleProduct/page1.html"})
+                    .when("/singlePro2", {templateUrl: "content/singleProduct/pagePro2.html"})
+                    .when("/singlePro3", {templateUrl: "content/singleProduct/pagePro3.html"})
+                    .when("/singlePro4", {templateUrl: "content/singleProduct/pagePro4.html"})
+                    .when("/singlePro5", {templateUrl: "content/singleProduct/pagePro5.html"})
+                    .when("/singlePro6", {templateUrl: "content/singleProduct/pagePro6.html"})
+                    .when("/singlePro7", {templateUrl: "content/singleProduct/pagePro7.html"})
+                    .when("/singlePro8", {templateUrl: "content/singleProduct/pagePro8.html"})
+
+
                     .when("/back", {templateUrl: "product/sale.html"})
+                    // blog page
                     .when("/bLog", {templateUrl: "home/blog.html"})
+                    .when("/blogPage1", {templateUrl: "home/blog.page/blogPage1.html"})
+                    .when("/blogPage2", {templateUrl: "home/blog.page/blogPage2.html"})
+                    .when("/blogPage3", {templateUrl: "home/blog.page/blogPage3.html"})
+                    .when("/blogPage4", {templateUrl: "home/blog.page/blogPage4.html"})
+                    .when("/blogPage5", {templateUrl: "home/blog.page/blogPage5.html"})
+                    .when("/blogPage6", {templateUrl: "home/blog.page/blogPage6.html"})
+                    .when("/blogPage7", {templateUrl: "home/blog.page/blogPage7.html"})
+                    .when("/blogPage8", {templateUrl: "home/blog.page/blogPage8.html"})
+                    .when("/blogPage9", {templateUrl: "home/blog.page/blogPage9.html"})
+                    .when("/blogPage10", {templateUrl: "home/blog.page/blogPage10.html"})
+                    .when("/blogPage11", {templateUrl: "home/blog.page/blogPage11.html"})
+                    .when("/blogPage12", {templateUrl: "home/blog.page/blogPage12.html"})
+                    .when("/allBlog", {templateUrl: "home/allBlog.html"})
+                    // $$$
                     
             });
             app.controller("myController",function($scope, $http){
