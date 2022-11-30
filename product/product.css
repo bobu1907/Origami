@@ -1,8 +1,8 @@
 .col-md-3:hover .buy{
-    bottom:0px ;
+    bottom:0 ;
  }
  .buy {
-    text-transform:uppercase;text-decoration:none;text-align: center;display: block;background-color:white;width:97%;height:60px;position: absolute;bottom: -500px;transition: 0.35s ease-in-out;
+    text-transform:uppercase;text-decoration:none;text-align: center;display: block;background-color:#DDC488;width:94%;height:60px;position: absolute;bottom: -500px;transition: 0.35s ease-in-out;
 
  }
 .buy a {
@@ -15,9 +15,32 @@
 }
 
 .col-md-2:hover .buy1{
-    bottom:0px ;
+    bottom:0 ;
  }
  .buy1 {
-    text-transform:uppercase;text-decoration:none;text-align: center;display: block;background-color:white;width:81.5%;position: absolute;bottom: -500px;transition: 0.35s ease-in-out;
+    text-transform:uppercase;text-decoration:none;text-align: center;display: block;background-color:#EEEED1;width:81.5%;position: absolute;bottom: -500px;transition: 0.35s ease-in-out;
 font-family: serif;
  }
+ /* .col-md-4:hover .buy{
+    bottom:0px ;
+ }
+ .col-md-6:hover .buy{
+    bottom:0px ;
+ }
+ .buy2 {
+    text-transform:uppercase;text-decoration:none;text-align: center;display: block;background-color:#EEEED1;width:81.5%;position: absolute;bottom: -500px;transition: 0.35s ease-in-out;
+font-family: serif;
+ }
+ .buy3 {
+    text-transform:uppercase;text-decoration:none;text-align: center;display: block;background-color:#EEEED1;width:79%;position: absolute;bottom: -500px;transition: 0.35s ease-in-out;
+font-family: serif;
+ }
+ .buy2 a {
+    text-decoration: none;
+    color:darkgoldenrod
+}
+.buy3 a {
+    text-decoration: none;
+    color:darkgoldenrod
+}
+  */
