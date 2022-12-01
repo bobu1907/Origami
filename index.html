@@ -99,20 +99,18 @@
         <a href="#"><i class="glyphicon glyphicon-check"></i> Login</a> 
         <a href="#"><i class="glyphicon glyphicon-globe"></i> Sigh up</a>
 
-   
-         <p>
-              
-          <h2 style="margin-bottom: 0px; padding-left:100px;color: #15873d;">O R I G A M I</h2>
+      <p>
+        <h2 style="margin-bottom: 0px; padding-left:100px;color: #15873d;">O R I G A M I</h2>
       </p>
       </div>
-    
+
  <!-- ======================================= NAVIGATION BAR ============================================================= -->
       <div style="font-family:Copperplate,Copperplate Gothic Light,fantasy;font-size:15px;color:black ">
        <ul style="  list-style-type:none;border-top: 1px;border-bottom: 1px;">
         <li style="display:inline-block; width:19%; padding-left:50px;"><a href="#/!" style="color:black">HOME</a></li>
         <li style="display:inline-block; width:19%;"><a href="#!b" style="color:black">PRODUCT</a></li>
         <li style="display:inline-block; width:19%;"><a href="#!c" style="color:black">CONTACT</a></li>
-        <li style="display:inline-block; width:19%;"><a href="#!a" style="color:black">ABOUT ORIGAMI</a></li>
+        <li style="display:inline-block; width:19%;"><a href="#allAbout" style="color:black">ABOUT ORIGAMI</a></li>
         <li style="display:inline-block; width:19%;"><input type="text" id="mySearch" onkeyup="myFunction()" 
           placeholder="Search..." title="Type in a category"></li>
       </ul>
@@ -215,6 +213,7 @@
             app.config(function ($routeProvider){
                 $routeProvider
                     .when("/", {templateUrl: "home/home.html"})
+                    .when("/allAbout", {templateUrl: "about/allAbout.html"})
                     .when("/a", {templateUrl: "product/sale.DTTL.html"})
                     .when("/b", {templateUrl: "product/sale.html"})
                     .when("/c", {templateUrl: "header/contactUs.html"})
@@ -232,6 +231,8 @@
 
 
                     .when("/back", {templateUrl: "product/sale.html"})
+
+
                     // blog page
                     .when("/bLog", {templateUrl: "home/blog.html"})
                     .when("/blogPage1", {templateUrl: "home/blog.page/blogPage1.html"})
