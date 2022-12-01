@@ -110,7 +110,7 @@
         <li style="display:inline-block; width:19%; padding-left:50px;"><a href="#/!" style="color:black">HOME</a></li>
         <li style="display:inline-block; width:19%;"><a href="#!b" style="color:black">PRODUCT</a></li>
         <li style="display:inline-block; width:19%;"><a href="#!c" style="color:black">CONTACT</a></li>
-        <li style="display:inline-block; width:19%;"><a href="#allAbout" style="color:black">ABOUT ORIGAMI</a></li>
+        <li style="display:inline-block; width:19%;"><a href="#!allAbout" style="color:black">ABOUT ORIGAMI</a></li>
         <li style="display:inline-block; width:19%;"><input type="text" id="mySearch" onkeyup="myFunction()" 
           placeholder="Search..." title="Type in a category"></li>
       </ul>
@@ -220,6 +220,10 @@
                     .when("/j", {templateUrl: "product/human.html"})
                     .when("/k", {templateUrl: "product/animal.html"})
                     .when("/l", {templateUrl: "product/plant.html"})
+
+
+
+                    .when("/back", {templateUrl: "product/sale.html"})
                     .when("/singleProduct", {templateUrl: "content/singleProduct/page1.html"})
                     .when("/singlePro2", {templateUrl: "content/singleProduct/pagePro2.html"})
                     .when("/singlePro3", {templateUrl: "content/singleProduct/pagePro3.html"})
@@ -228,10 +232,6 @@
                     .when("/singlePro6", {templateUrl: "content/singleProduct/pagePro6.html"})
                     .when("/singlePro7", {templateUrl: "content/singleProduct/pagePro7.html"})
                     .when("/singlePro8", {templateUrl: "content/singleProduct/pagePro8.html"})
-
-
-                    .when("/back", {templateUrl: "product/sale.html"})
-
 
                     // blog page
                     .when("/bLog", {templateUrl: "home/blog.html"})
