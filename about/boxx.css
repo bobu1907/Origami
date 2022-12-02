@@ -1,4 +1,4 @@
-#bigbox {
+#bigboxx {
     display: flex;
     width: 100%;
     padding: 4% 2%;
@@ -6,7 +6,7 @@
     height: 100vh;
   }
   
-#box {
+#boxx {
     flex: 1;
     overflow: hidden;
     transition: 0.5s;
@@ -15,7 +15,7 @@
     line-height: 0;
   }
   
-  #box > img {
+  #boxx > img {
     width: 200%;
     height: calc(100% - 10vh);
     -o-object-fit: cover;
@@ -24,7 +24,7 @@
   }
 
 
-  #box > span {
+  #boxx > span {
     font-size: 3.8vh;
     display: block;
     text-align: center;
@@ -32,12 +32,18 @@
     line-height: 2.6;
   }
 
+
+  #boxx:hover a{
+    width:890px;
+    height:645px;
+    position:absolute;
+  }
   
-  #box:hover {
+  #boxx:hover {
     flex: 1 2 50%;
   }
   
-  #box:hover > img {
+  #boxx:hover > img {
     width: 100%;
     height: 120%;
   }
