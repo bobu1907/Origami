@@ -109,8 +109,8 @@
        <ul style="  list-style-type:none;border-top: 1px;border-bottom: 1px;">
         <li style="display:inline-block; width:19%; padding-left:50px;"><a href="#/!" style="color:black">HOME</a></li>
         <li style="display:inline-block; width:19%;"><a href="#!b" style="color:black">PRODUCT</a></li>
-        <li style="display:inline-block; width:19%;"><a href="#" style="color:black">CONTACT</a></li>
-        <li style="display:inline-block; width:19%;"><a href="#allAbout" style="color:black">ABOUT ORIGAMI</a></li>
+        <li style="display:inline-block; width:19%;"><a href="#!c" style="color:black">CONTACT</a></li>
+        <li style="display:inline-block; width:19%;"><a href="#!allAbout" style="color:black">ABOUT ORIGAMI</a></li>
         <li style="display:inline-block; width:19%;"><input type="text" id="mySearch" onkeyup="myFunction()" 
           placeholder="Search..." title="Type in a category"></li>
       </ul>
@@ -214,12 +214,16 @@
                 $routeProvider
                     .when("/", {templateUrl: "home/home.html"})
                     .when("/allAbout", {templateUrl: "about/allAbout.html"})
-                    .when("/a", {templateUrl: "product/sale.DTTL.html"})
+                    .when("/a", {templateUrl: "product/AboutUS2.html"})
                     .when("/b", {templateUrl: "product/sale.html"})
                     .when("/c", {templateUrl: "header/contactUs.html"})
                     .when("/j", {templateUrl: "product/human.html"})
                     .when("/k", {templateUrl: "product/animal.html"})
                     .when("/l", {templateUrl: "product/plant.html"})
+
+
+
+                    .when("/back", {templateUrl: "product/sale.html"})
                     .when("/singleProduct", {templateUrl: "content/singleProduct/page1.html"})
                     .when("/singlePro2", {templateUrl: "content/singleProduct/pagePro2.html"})
                     .when("/singlePro3", {templateUrl: "content/singleProduct/pagePro3.html"})
@@ -228,10 +232,27 @@
                     .when("/singlePro6", {templateUrl: "content/singleProduct/pagePro6.html"})
                     .when("/singlePro7", {templateUrl: "content/singleProduct/pagePro7.html"})
                     .when("/singlePro8", {templateUrl: "content/singleProduct/pagePro8.html"})
+                    .when("/singlePro9", {templateUrl: "content/singleProduct/pagePro9.html"})
+                    .when("/singlePro10", {templateUrl: "content/singleProduct/pagePro10.html"})
+                    .when("/singlePro11", {templateUrl: "content/singleProduct/pagePro11.html"})
+                    .when("/singlePro12", {templateUrl: "content/singleProduct/pagePro12.html"})
 
-
-                    .when("/back", {templateUrl: "product/sale.html"})
-
+                    .when("/animalPage1", {templateUrl: "content/animal/animalPage1.html"})
+                    .when("/animalPage2", {templateUrl: "content/animal/animalPage2.html"})
+                    .when("/animalPage3", {templateUrl: "content/animal/animalPage3.html"})
+                    .when("/animalPage4", {templateUrl: "content/animal/animalPage4.html"})
+                    .when("/animalPage5", {templateUrl: "content/animal/animalPage5.html"})
+                    .when("/animalPage6", {templateUrl: "content/animal/animalPage6.html"})
+                    .when("/animalPage7", {templateUrl: "content/animal/animalPage7.html"})
+                    .when("/animalPage8", {templateUrl: "content/animal/animalPage8.html"})
+                    .when("/animalPage9", {templateUrl: "content/animal/animalPage9.html"})
+                    .when("/animalPage10", {templateUrl: "content/animal/animalPage10.html"})
+                    .when("/animalPage11", {templateUrl: "content/animal/animalPage11.html"})
+                    .when("/animalPage12", {templateUrl: "content/animal/animalPage12.html"})
+                    .when("/animalPage13", {templateUrl: "content/animal/animalPage13.html"})
+                    .when("/animalPage14", {templateUrl: "content/animal/animalPage14.html"})
+                    .when("/animalPage15", {templateUrl: "content/animal/animalPage15.html"})
+                    .when("/animalPage16", {templateUrl: "content/animal/animalPage16.html"})
 
                     // blog page
                     .when("/bLog", {templateUrl: "home/blog.html"})
