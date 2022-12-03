@@ -34,14 +34,14 @@
 .inner-container{
     width: 100%;
     float: right;
-    background-color: #fdfdfd;
+    background-color: #272626;
     padding: 150px;
 box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
  
 }
 .inner-container h1{
     margin-bottom: 30px;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 900;
 }
 .text{
@@ -105,6 +105,150 @@ transition: 0.5s;
   color: #fff;
   border-radius: 20px;
 }
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800);
+.snip0016 {
+  font-family: 'Raleway', Arial, sans-serif;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 120px;
+  max-width: 210px;
+  max-height: 220px;
+  width: 100%;
+  background: #000000;
+  text-align: left;
+}
+
+.snip0016 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* seeting hình */
+.snip0016 img {
+  max-width: 100%;
+  opacity: 1;
+  width: 100%;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+
+/* đặt vị trí */
+.snip0016 figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 30px 3em;
+  width: 100%;
+  height: 100%;
+}
+
+/* setting đg trắng bên phải */
+.snip0016 figcaption::before {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 100%;
+  border-left: 4px solid rgba(255, 255, 255, 0.8);
+  content: '';
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+
+/* đặt setting vị trí cho h2 p */
+.snip0016 h2,.snip0016 p {
+  margin: 0 0 5px;
+  opacity: 0;       /* độ mờ đục */
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s,-webkit-transform 0.35s,-moz-transform 0.35s,-o-transform 0.35s,transform 0.35s;
+}
+
+/* font chữ h2 */
+.snip0016 h2 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+  text-transform: uppercase;
+  -webkit-transform: translate3d(30%, 0%, 0);
+  transform: translate3d(30%, 0%, 0);
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+/* in đậm span */
+.snip0016 h2 span {
+  font-weight: 800;
+}
+
+/* hiệu ứng chữ chạy lên */
+.snip0016 p {
+  font-weight: 200;
+  -webkit-transform: translate3d(0%, 30%, 0);
+  transform: translate3d(0%, 30%, 0);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+/* đặt thẻ a, mở rộng LRTB 0, sẽ chọn đc bả khung */
+.snip0016 a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  color: #ffffff;
+}
+
+/* độ mờ đục của hình */
+.snip0016:hover img {
+  opacity: 0.3;
+}
+
+/* thẻ figcaption h2 */
+.snip0016:hover figcaption h2 {
+  opacity: 1;
+  -webkit-transform: translate3d(0%, 0%, 0);
+  transform: translate3d(0%, 0%, 0);
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+/* thẻ figcaption p */
+.snip0016:hover figcaption p {
+  opacity: 0.9;
+  -webkit-transform: translate3d(0%, 0%, 0);
+  transform: translate3d(0%, 0%, 0);
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+
+/* thanh trắng bên trái */
+.snip0016:hover figcaption::before {
+  background: rgba(255, 255, 255, 0);
+  left: 30px;
+  opacity: 1;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+
+/* Demo purposes only */
+html {
+  height: 20%;
+}
+body {
+  background-color: #212121;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 20%;
+}
         </style>
 
         <img src="/product/PhucEdit.jpg" height="740">
@@ -122,7 +266,37 @@ transition: 0.5s;
                 </div>
             </div>
         </div>
-        
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/hieu-ung/hu9.css">
+</head>
+<body>
+    <figure class="snip0016">
+        <img src="/product/Phuc1.jpg" alt="sample41"/>
+        <figcaption>
+          <h2>I think <span>nighttime</span> is dark</h2>
+          <p>So you can imagine your fears with less distraction.</p>
+          <a href="#"></a>
+        </figcaption>     
+      </figure>
+      <figure class="snip0016">
+        <img src="/product/Phuc2.jpg" alt="sample42"/>
+        <figcaption>
+          <h2>I suppose if we couldn't <span>laugh</span></h2>
+          <p>At things that don't make sense, we couldn't react to a lot of life.</p>
+          <a href="#"></a>
+        </figcaption>     
+      </figure>
+      <figure class="snip0016">
+        <img src="/product/Phuc3.jpg" alt="sample43"/>
+        <figcaption>
+          <h2>I think the <span>surest</span> sign </h2>
+          <p>That intelligent life exists elsewhere in the universe is that none of it has tried to contact us.</p>
+          <a href="#"></a>
+        </figcaption>     
+      </figure> 
 
     </body>
     </html>
