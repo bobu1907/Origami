@@ -96,8 +96,8 @@
 </head>
 <body ng-app="myApp">
     <div class="navbar">
-        <a href="#"><i class="glyphicon glyphicon-check"></i> Login</a> 
-        <a href="#"><i class="glyphicon glyphicon-globe"></i> Sigh up</a>
+        <a href="login.html"><i class="glyphicon glyphicon-check"></i> Login</a> 
+        <a href="signup.html"><i class="glyphicon glyphicon-globe"></i> Sigh up</a>
 
       <p>
         <h2 style="margin-bottom: 0px; padding-left:100px;color: #15873d;">O R I G A M I</h2>
@@ -110,7 +110,7 @@
         <li style="display:inline-block; width:19%; padding-left:50px;"><a href="#/!" style="color:black">HOME</a></li>
         <li style="display:inline-block; width:19%;"><a href="#!b" style="color:black">PRODUCT</a></li>
         <li style="display:inline-block; width:19%;"><a href="#!c" style="color:black">CONTACT</a></li>
-        <li style="display:inline-block; width:19%;"><a href="#!allAbout" style="color:black">ABOUT ORIGAMI</a></li>
+        <li style="display:inline-block; width:19%;"><a href="#!allAbout" style="color:black">ABOUT US</a></li>
         <li style="display:inline-block; width:19%;"><input type="text" id="mySearch" onkeyup="myFunction()" 
           placeholder="Search..." title="Type in a category"></li>
       </ul>
@@ -216,6 +216,7 @@
                     .when("/allAbout", {templateUrl: "about/allAbout.html"})
                     .when("/a", {templateUrl: "product/AboutUS2.html"})
                     .when("/b", {templateUrl: "product/sale.html"})
+                    .when("/sale.DTTL", {templateUrl: "product/sale.DTTL.html"})
                     .when("/c", {templateUrl: "header/contactUs.html"})
                     .when("/j", {templateUrl: "product/human.html"})
                     .when("/k", {templateUrl: "product/animal.html"})
