@@ -18,8 +18,7 @@ eProject documentation at https://github.com/bobu1907/Origami/tree/main/document
 
 ============================
 
-eProject published at https://lnnhi1310.github.io/Kitchen-Appliances/index.html
-
+eProject published at https://bobu1907.github.io/Origami/
 ============================
 
 Thank you for spending your time to look at our work.
