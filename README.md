@@ -14,7 +14,7 @@ Student1408029  Nguyễn Trọng Tiến Đức
 Student1409154  Diệp Thái Thiên Long
 ============================
 
-eProject documentation at https://github.com/lnnhi1310/Kitchen-Appliances/tree/main/documentary
+eProject documentation at https://github.com/bobu1907/Origami/tree/main/document
 
 ============================
 
