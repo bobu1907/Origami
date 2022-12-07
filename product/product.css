@@ -2,7 +2,7 @@
     bottom:0 ;
  }
  .buy {
-    text-transform:uppercase;text-decoration:none;text-align: center;display: block;background-color:#DDC488;width:94%;height:60px;position: absolute;bottom: -500px;transition: 0.35s ease-in-out;
+    text-transform:uppercase;text-decoration:none;text-align: center;display: block;background-color:#DDC488;width: 97%;height:60px;position: absolute;bottom: -500px;transition: 0.35s ease-in-out;
 
  }
 .buy a {

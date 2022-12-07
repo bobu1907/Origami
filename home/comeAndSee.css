@@ -113,7 +113,7 @@
   -webkit-animation: ani2 0.7s steps(70) forwards;
   animation: ani2 0.7s steps(70) forwards;
 }
-.button-container-3 button:hover {
+.button-container-3   button:hover {
   -webkit-animation: ani 0.7s steps(70) forwards;
   animation: ani 0.7s steps(70) forwards;
 }
@@ -147,6 +147,23 @@
   background-color: #ffffff;
   letter-spacing: 10px;
 }
+.mas4{
+  position: absolute;
+  color: rgb(82, 82, 217);
+  text-align: center;
+  width: 10px;
+  height: 100%;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  position: absolute;
+  font-size: 5px;
+  padding-top:5%;
+  overflow: hidden;
+  font-weight: bold;
+  background-color: #ffffff;
+  letter-spacing: 10px;
+}
+
 
 
 @-webkit-keyframes ani {
