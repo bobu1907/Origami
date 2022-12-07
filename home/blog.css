@@ -74,11 +74,11 @@
   } */
   
   
-.hover-5 a{
+.hover-5:hover a{
     text-decoration: none;
     color: #fff;
 }
-.hover-6 a{
+.hover-6:hover a{
   text-decoration: none;
   color: #fff;
 }
