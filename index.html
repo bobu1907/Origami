@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="product/product1.css">
     <link rel="stylesheet" href="product/hinhlon.css">
     <link rel="stylesheet" href="home/blog.css">
+    <link rel="stylesheet" href="nav.css">
    
    
     <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -108,15 +109,17 @@
       </div>
 
  <!-- ======================================= NAVIGATION BAR ============================================================= -->
-      <div style="font-family:Copperplate,Copperplate Gothic Light,fantasy;font-size:15px;color:black ">
-       <ul style="  list-style-type:none;border-top: 1px;border-bottom: 1px;">
-        <li style="display:inline-block; width:19%; padding-left:50px;"><a href="#/!" style="color:black">HOME</a></li>
-        <li style="display:inline-block; width:19%;"><a href="#!b" style="color:black">PRODUCT</a></li>
-        <li style="display:inline-block; width:19%;"><a href="#!c" style="color:black">CONTACT</a></li>
-        <li style="display:inline-block; width:19%;"><a href="#!allAbout" style="color:black">ABOUT US</a></li>
-        <li style="display:inline-block; width:19%;"><input type="text" id="mySearch" onkeyup="myFunction()" 
-          placeholder="Search..." title="Type in a category"></li>
-      </ul>
+ <div class="navi">
+  <nav class="navbar1" >
+          <div id="trapezoid" >
+            <a href="#" style="padding-right:60px">Home</a>
+            <a href="#!b" style="padding-right:60px">Product</a>
+            <a href="#!allAbout"style="padding-right:60px">AboutOrigami</a>
+            <a href="#!c" style="padding-right:60px">Contact</a>
+            <a href="#!bLog" style="padding-right:120px">Blog</a>
+            <a href="#" class=""> <ion-icon name="search"></ion-icon></a>
+           
+        </nav>
       </div>
       <!-- ============================================== VIEW ================================================== -->
 <div ng-view></div>
