@@ -1,0 +1,80 @@
+.navi1 {
+    min-width: 100%;
+    background:  rgb(249, 242, 230);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right,rgb(249, 242, 230),  rgb(249, 242, 230));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,rgb(249, 242, 230), rgb(249, 242, 230)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+      margin-top:0px;
+  }
+  
+  
+  #trapezoid {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+    border: 80px solid rgba(0,0,0,0);
+    border-top: 0 solid;
+    border-bottom: 50px solid rgba(1, 1, 1, .4);
+    -webkit-border-radius: 20px 20px 0 0;
+    border-radius: 20px 20px 0 0;
+    font: normal 100%/normal Arial, Helvetica, sans-serif;
+    color: rgba(0,0,0,0.7);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+    margin-top:-53px;
+    width: 700px;
+    position: relative;
+    transition: all 0.7s ease;
+    padding-left:7%;
+    width:1210px;
+  }
+  
+  #trapezoid a, .subnavbtn {
+   -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+  }
+  
+ 
+  
+  #trapezoid:hover .sub-home {
+    justify-content: center;
+    margin-top: 53px;
+  }
+  
+  .navbar1 {
+   margin-top: 2.2%;
+    width: 100%;
+    
+    display:inline-block;
+   
+    margin-bottom: -0.59%;
+   
+
+  }
+  
+  .navbar1 a {
+    float: left;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    padding: 14px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    transition: all 0.5s ease;
+  
+  }
+  
+  
+  
+  .navbar1 a:hover, .subnav:hover .subnavbtn {
+    background:#8CA6DB;
+    color: black;
+    border-radius:5px;
+    text-decoration: none;
+  }
+  
+ 
