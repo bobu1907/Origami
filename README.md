@@ -6,11 +6,11 @@ Project title:Origami
 
 ========> Group 02 <=========
 
-3 collaborators:
+4 collaborators:
 
-Student1409158  TRƯƠNG TẤN PHÁT
-Student1396945  Nguyễn Hoàng Gia Phúc
-Student1408029  Nguyễn Trọng Tiến Đức
+Student1409158  TRƯƠNG TẤN PHÁT <br>
+Student1396945  Nguyễn Hoàng Gia Phúc <br>
+Student1408029  Nguyễn Trọng Tiến Đức <br>
 Student1409154  Diệp Thái Thiên Long
 ============================
 
@@ -18,7 +18,7 @@ eProject documentation at https://github.com/bobu1907/Origami/tree/main/document
 
 ============================
 
-eProject published at https://bobu1907.github.io/Origami/
+eProject published at https://github.com/bobu1907/Origami
 ============================
 
 Thank you for spending your time to look at our work.
