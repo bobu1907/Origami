@@ -18,7 +18,7 @@ eProject documentation at https://github.com/bobu1907/Origami/tree/main/document
 
 ============================
 
-eProject published at https://bobu1907.github.io/Origami/
+eProject published at https://github.com/bobu1907/Origami
 ============================
 
 Thank you for spending your time to look at our work.
