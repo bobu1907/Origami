@@ -105,28 +105,30 @@
 </head>
 <body ng-app="myApp">
     <div class="navbar">
-      <a style="font-size: 20px; background-color: rgb(249, 242, 230);" href="content/cart/cart.html"><ion-icon name="cart"></ion-icon></a>
+      <a style="font-size: 20px; background-color: rgb(249, 242, 230);" href="pay/pay.html"><ion-icon name="cart"></ion-icon></a>
         <a href="login.html"><i class="glyphicon glyphicon-check"></i> Login</a> 
         <a href="signup.html"><i class="glyphicon glyphicon-globe"></i> Sigh up</a>
 
       <p>
-        <h2 style="margin-bottom: 0px; padding-left:100px;color: #15873d;">O R I G A M I</h2>
+        <h2 style="padding-bottom:20px; padding-left:100px;color: #15873d;">O R I G A M I</h2>
       </p>
       </div>
 
  <!-- ======================================= NAVIGATION BAR ============================================================= -->
- <div class="navi">
-  <nav class="navbar1" >
-          <div id="trapezoid" >
-            <a href="#" style="padding-right:60px">Home</a>
-            <a href="#!b" style="padding-right:60px">Product</a>
-            <a href="#!allAbout"style="padding-right:60px">About Us</a>
-            <a href="#!c" style="padding-right:60px">Contact</a>
-            <a href="#!bLog" style="padding-right:120px">Blog</a>
-            <a href="#" class=""> <ion-icon name="search"></ion-icon></a>
-           
-        </nav>
-      </div>
+
+  <div class="navi">
+    <nav class="navbar1" >
+            <div id="trapezoid" >
+              <a href="#" style="padding-right:60px">Home</a>
+              <a href="#!b" style="padding-right:60px">Product</a>
+              <a href="#!allAbout"style="padding-right:60px">About Us</a>
+              <a href="#!c" style="padding-right:60px">Contact</a>
+              <a href="#!bLog" style="padding-right:120px">Blog</a>
+              <a href="#" class=""> <ion-icon name="search"></ion-icon></a>
+             
+          </nav>
+        </div>
+
       <!-- ============================================== VIEW ================================================== -->
 <div ng-view></div>
 
@@ -155,7 +157,7 @@
                       <li><a href="#">male</a></li>
                       <li><a href="cash.html">SALE</a></li>
                       <li><a href="#!bLog">Blog</a></li>
-                      <li><a href="/tym.html">INDIA</a></li>
+                      <li><a href="tym.html">INDIA</a></li>
 
                   </ul>
               </div>
@@ -171,10 +173,10 @@
         <div class="col-md-2 footer-social animated fadeInDown">
             <h4>Follow Us</h4>
             <ul class="icon">
-                 <li><a href="https://www.facebook.com/paperkawaii"><ion-icon name="logo-facebook" style="color:dodgerblue"></ion-icon></a></li> 
-                <li> <a href="https://twitter.com/suzukiorigami"> <ion-icon name="logo-twitter" style="color:cornflowerblue"></ion-icon></a></li>
-                <li><a href="Instagram.com/origami_bubbles/"> <ion-icon name="logo-instagram" style="color:	#FF99FF"></ion-icon></a></li>
-                <li><a href="https://www.youtube.com/@jonakashima"> <ion-icon name="logo-youtube" style="color:#FF3333"></ion-icon></a></li>
+                <li><a href="https://www.facebook.com/paperkawaii"><ion-icon name="logo-facebook" style="color:dodgerblue"></ion-icon></a></li> 
+                <li><a href="https://twitter.com/suzukiorigami"><ion-icon name="logo-twitter" style="color:cornflowerblue"></ion-icon></a></li>
+                <li><a href="Instagram.com/origami_bubbles/"><ion-icon name="logo-instagram" style="color:	#FF99FF"></ion-icon></a></li>
+                <li><a href="https://www.youtube.com/@jonakashima"><ion-icon name="logo-youtube" style="color:#FF3333"></ion-icon></a></li>
                   
                 <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
               </ul>
@@ -305,18 +307,18 @@
                   .when("/plantPage16", {templateUrl: "content/plant/plant15.html"})
                     // blog page
                     .when("/bLog", {templateUrl: "home/blog.html"})
-                    .when("/blogPage1", {templateUrl: "home/blog.page/blogPage1.html"})
-                    .when("/blogPage2", {templateUrl: "home/blog.page/blogPage2.html"})
-                    .when("/blogPage3", {templateUrl: "home/blog.page/blogPage3.html"})
-                    .when("/blogPage4", {templateUrl: "home/blog.page/blogPage4.html"})
-                    .when("/blogPage5", {templateUrl: "home/blog.page/blogPage5.html"})
-                    .when("/blogPage6", {templateUrl: "home/blog.page/blogPage6.html"})
-                    .when("/blogPage7", {templateUrl: "home/blog.page/blogPage7.html"})
-                    .when("/blogPage8", {templateUrl: "home/blog.page/blogPage8.html"})
-                    .when("/blogPage9", {templateUrl: "home/blog.page/blogPage9.html"})
-                    .when("/blogPage10", {templateUrl: "home/blog.page/blogPage10.html"})
-                    .when("/blogPage11", {templateUrl: "home/blog.page/blogPage11.html"})
-                    .when("/blogPage12", {templateUrl: "home/blog.page/blogPage12.html"})
+                    .when("/blogPage1", {templateUrl: "home/blog.page/Page1.html"})
+                    .when("/blogPage2", {templateUrl: "home/blog.page/Page2.html"})
+                    .when("/blogPage3", {templateUrl: "home/blog.page/Page3.html"})
+                    .when("/blogPage4", {templateUrl: "home/blog.page/Page4.html"})
+                    .when("/blogPage5", {templateUrl: "home/blog.page/Page5.html"})
+                    .when("/blogPage6", {templateUrl: "home/blog.page/Page6.html"})
+                    .when("/blogPage7", {templateUrl: "home/blog.page/Page7.html"})
+                    .when("/blogPage8", {templateUrl: "home/blog.page/Page8.html"})
+                    .when("/blogPage9", {templateUrl: "home/blog.page/Page9.html"})
+                    .when("/blogPage10", {templateUrl: "home/blog.page/Page10.html"})
+                    .when("/blogPage11", {templateUrl: "home/blog.page/Page11.html"})
+                    .when("/blogPage12", {templateUrl: "home/blog.page/Page12.html"})
                     .when("/allBlog", {templateUrl: "home/allBlog.html"})
 
                     .when("/backk", {templateUrl: "product/sale.DTTL.html"})
@@ -341,7 +343,8 @@
                     .when("/sixblog", {templateUrl: "home/allBlog.html"})
                     .when("/sixblogagain", {templateUrl: "home/allBlog2.html"})
 
-                    
+                    // Cart
+                    .when("/clicktobuy", {templateUrl: "content/cart/cart.html"})
                     
             });
             app.controller("myController",function($scope, $http){

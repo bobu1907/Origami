@@ -1,10 +1,9 @@
-.navi1 {
-    min-width: 100%;
+.navi{
+    min-width: 20%;max-width: 100%;
     background:  rgb(249, 242, 230);  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right,rgb(249, 242, 230),  rgb(249, 242, 230));  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right,rgb(249, 242, 230), rgb(249, 242, 230)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-      margin-top:0px;
+    margin-top:-12px;
   }
   
   
@@ -71,7 +70,7 @@
   
   
   .navbar1 a:hover, .subnav:hover .subnavbtn {
-    background:#8CA6DB;
+    background:#d8ffdb;
     color: black;
     border-radius:5px;
     text-decoration: none;
