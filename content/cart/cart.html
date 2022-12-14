@@ -1,381 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href="style100.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&family=Open+Sans:ital,wght@0,400;1,500&family=Poppins:ital,wght@1,100&family=Rubik+Puddles&family=Rubik+Storm&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <style>
-        .cart-page{
-            margin: 80px auto;
-        }
-        table{
-            width: 100%;
-            border-collapse: collapse;
-        }
-        .cart-info{
-            display: flex;
-            flex-wrap: wrap;
-        }
-        img{
-            height: 200px;
-        }
-        th{
-            text-align: left;
-            padding: 5px;
-            color: #fff;
-            background-color: #fa91f3;
-            font-weight: normal;
-        }
-        td{
-            padding: 10px 5px;
-        }
-        td input{
-            width: 40px;
-            height: 30px;
-            padding: 5px;
-        }
-        td a{
-            color: #ffacac;
-            font-size: 12px;
-        }
-        td img{
-            width: 80px;
-            height: 80px;
-            margin-right: 10px;
-        }
-        .total-price{
-            display: flex;
-            justify-content: flex-end;
-        }
-        .total-price table{
-            border-top: 3px solid #fa91f3;
-            width: 100%;
-            max-width: 400px;
-        }
-        td:last-child{
-            text-align: right;
-        }
-        th:last-child{
-            text-align: right;
-        }
-        th{
-            font-size: 25px;
-            font-family: 'Rubik Storm', cursive;
-        }
-        table{
-            background-color:antiquewhite;
-        }
-        p{
-            font-family: 'Rubik Storm', cursive;
-        }
-        span{
-            font-weight: 800;
-        }
-        article {
-  max-width: 10000px;
-  margin: 0em auto;
-  overflow: hidden;
-  position: relative;
-  min-height: 2em;
-}
-
-.example-left {
-  white-space: nowrap;
-  position: absolute;
-  text-transform: uppercase;
-}
-
-.example-left {
-  -webkit-animation: mymove s linear infinite;
-  white-space: nowrap;
-  animation: mymove 2s linear infinite alternate;
-}
-
-@-webkit-keyframes mymove {
-  from {
-    left: 100;
-  }
-  to {
-    left: 1100px;
-  }
-}
-
-@keyframes mymove {
-  from {
-    left: 100;
-  }
-  to {
-    left: 1100px;
-  }
-}
-
-.example-right {
-  white-space: nowrap;
-  position: absolute;
-  top:2em;
-  opacity: .4;
-  text-transform: uppercase;
-  
-}
-
-.example-right {
-  -webkit-animation: urmove 8s linear infinite; 
-  white-space: nowrap;
-  animation: urmove 8s linear infinite alternate;
-  
-}
-
-@-webkit-keyframes urmove {
-  from {
-    right: 0;
-  }
-  to {
-    right: 140px;
-  }
-}
-
-@keyframes urmove {
-  from {
-    right: 0;
-  }
-  to {
-    right: 140px;
-  }
-}
-
-@keyframes early 
-{ from { opacity:1; } to { opacity:0; } }
-
-.early {
-    animation:fadeIn ease-in 1; 
-
-    animation-fill-mode:forwards;
-
-    animation-duration:1s;
-    animation-delay: 1.5s
-}
-.example-left{
-    color: #ff00c8;
-}
-        @import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Open+Sans:ital,wght@0,400;1,500&family=Poppins:ital,wght@1,100&family=Rubik+Puddles&family=Rubik+Storm&display=swap');
-
-    </style>
-    <div class="small-container cart-page">
-     
-    <table>
-        <tr>
-           <th>Product</th>
-           <th>Quantity</th>
-           <th>Subtotal</th>
-        </tr>
-        <tr>
-            <td>
-                <div class="cart-info">
-                    <img src="product/800pxx.jpg">
-                    <div>
-                        <p>
-                           Red ThienLong
-                        </p>
-                        <small><span>Price:</span> $150.00</small>
-                        <br>
-                        <a href="">Remove</a>
-                    </div>
-                </div>
-
-            </td>
-            <td><input type="number" value="1"></td>
-            <td>$550.000</td>
-        </tr>
-        <td>
-            <div class="cart-info">
-                <img src="product/800pxxx.jpg">
-                <div>
-                    <p>
-                       Red ThienLong
-                    </p>
-                    <small><span>Price:</span> $550.00</small>
-                    <br>
-                    <a href="">Remove</a>
-                </div>
-            </div>
-
-        </td>
-        <td><input type="number" value="1"></td>
-        <td>$550.000</td>
-    </tr>
-    <td>
-        <div class="cart-info">
-            <img src="product/800pxxxx.jpg">
-            <div>
-                <p>
-                   Red ThienLong
-                </p>
-                <small><span>Price:</span> $50.00</small>
-                <br>
-                <a href="">Remove</a>
-            </div>
+    <section class="container-2 content-section">
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
         </div>
-
-    </td>
-    <td><input type="number" value="1"></td>
-    <td>$550.000</td>
-</tr>
-
-        <tr>
-            <td>
-                <div class="cart-info">
-                    <img src="product/800pxxxxx.jpg">
-                    <div>
-                        <p>
-                           Red TanPhat
-                        </p>
-                        <small><span>Price:</span> $50.00</small>
-                        <br>
-                        <a href="">Remove</a>
-                    </div>
-                </div>
-
-            </td>
-            <td><input type="number" value="1"></td>
-            <td>$450.000</td>
-        </tr>
-        <tr>
-            <td>
-                <div class="cart-info">
-                    <img src="product/800pxxxxxx.jpg">
-                    <div>
-                        <p>
-                           Red TranDuc
-                        </p>
-                        <small><span>Price:</span> $50.00</small>
-                        <br>
-                        <a href="">Remove</a>
-                    </div>
-                </div>
-
-            </td>
-            <td><input type="number" value="1"></td>
-            <td>$350.000</td>
-        </tr>
-        <tr>
-            <td>
-                <div class="cart-info">
-                    <img src="product/800x.jpg">
-                    <div>
-                        <p>
-                           Red GiaPhuc
-                        </p>
-                        <small><span>Price: </span> $50.00</small>
-                        <br>
-                        <a href="">Remove</a>
-                    </div>
-                </div>
-
-            </td>
-            <td><input type="number" value="1"></td>
-            <td>$250.000</td>
-        </tr>
-        <tr>
-            <td>
-                <div class="cart-info">
-                    <img src="product/800xx.jpg">
-                    <div>
-                        <p>
-                           Red GiaPhuc
-                        </p>
-                        <small><span>Price: </span> $50.00</small>
-                        <br>
-                        <a href="">Remove</a>
-                    </div>
-                </div>
-
-            </td>
-            <td><input type="number" value="1"></td>
-            <td>$250.000</td>
-        </tr>
-        <tr>
-            <td>
-                <div class="cart-info">
-                    <img src="product/800xxx.jpg">
-                    <div>
-                        <p>
-                           Red GiaPhuc
-                        </p>
-                        <small><span>Price: </span> $50.00</small>
-                        <br>
-                        <a href="">Remove</a>
-                    </div>
-                </div>
-
-            </td>
-            <td><input type="number" value="1"></td>
-            <td>$250.000</td>
-        </tr>
-        <tr>
-            <td>
-                <div class="cart-info">
-                    <img src="product/800xxxx.jpg">
-                    <div>
-                        <p>
-                           Red GiaPhuc
-                        </p>
-                        <small><span>Price: </span> $50.00</small>
-                        <br>
-                        <a href="">Remove</a>
-                    </div>
-                </div>
-
-            </td>
-            <td><input type="number" value="1"></td>
-            <td>$250.000</td>
-        </tr>
-        <section class="early">
-
-            <article>
-               <p class="example-right">Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text Your scrolling text goes here Your scrolling text goes here </p>
-            </article>
-            <article>
-                <p class="example-left">❣Thank you for your purchase with <span>❣</span></p>
-              
-               <p class="example-right">Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text Your scrolling text goes here Your scrolling text goes here </p>
-              
-              </article>
-            <article>
-            <marquee behavior="scroll" direction="left">Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here</marquee>
-            
-            <marquee behavior="scroll" direction="right">Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here </marquee>
-            </article>
-            
-              <article>
-                <p class="example-left">❣Thank you for your purchase with  <span>❣</span></p> 
-              </article>
-              </section>
-    </table>
-
-<div class="total-price">
-
-<table>
-<tr>
-    <td>Subtotal</td>
-    <td>$20.00</td>
-</tr>
-<tr>
-    <td>ProTum</td>
-    <td>$19.00</td>
-</tr>
-<tr>
-    <td>Tatot</td>
-    <td>$21.00</td>
-</tr>
-</table>
-</div>
-
-    </div>
+        <div class="cart-items">
+      
+          <div class="cart-row">
+            <div class="cart-item cart-column">
+              <img class="cart-item-image" src="image/hinh1.jpg">
+              <span class="cart-item-title">350ml Round Pet Plastic Bottle</span>  
+            </div>
+            <span class="cart-item-price cart-column">5.000đ</span>
+            <div class="cart-quantity cart-column">
+              <input class="cart-quantity-input" type="number" value="1">
+              <button class="btn btn-danger bx bx-trash" type="button"></button>
+            </div>
+          </div>
+      
+          <div class="cart-row">
+            <div class="cart-item cart-column">
+              <img class="cart-item-image" src="image/hinh2.jpg">
+              <span class="cart-item-title">250ml Square Pet Plastic Bottle</span>  
+            </div>
+            <span class="cart-item-price cart-column">4.000đ</span>
+            <div class="cart-quantity cart-column">
+              <input class="cart-quantity-input" type="number" value="1">
+              <button class="btn btn-danger bx bx-trash" type="button"></button>
+            </div>
+          </div>
+          
+          <div class="cart-row">
+            <div class="cart-item cart-column">
+              <img class="cart-item-image" src="image/hinh3.jpg">
+              <span class="cart-item-title">Empty Plastic Bottle</span>  
+            </div>
+            <span class="cart-item-price cart-column">1.800đ</span>
+            <div class="cart-quantity cart-column">
+              <input class="cart-quantity-input" type="number" value="1">
+              <button class="btn btn-danger bx bx-trash" type="button"></button>
+            </div>
+          </div>
+      
+          <div class="cart-row">
+            <div class="cart-item cart-column">
+              <img class="cart-item-image" src="image/hinh4.jpg">
+              <span class="cart-item-title">Empty Plastic Bottle With Red Cap</span>  
+            </div>
+            <span class="cart-item-price cart-column">1.500đ</span>
+            <div class="cart-quantity cart-column">
+              <input class="cart-quantity-input" type="number" value="1">
+              <button class="btn btn-danger bx bx-trash" type="button"></button>
+            </div>
+          </div>
+      
+      
+        </div>
+      
+      
+      
+      
+      </section>
+      <div class="total-price">
+    
+        <table>
+          <thead>
+            <th colspan="2">Cart Total</th>
+          </thead>
+          <tr class="cart-total">
+    
+              <td class="cart-total-title">Total</td>
+              <td class="cart-total-price">0đ</td>
+    
+          </tr>
+          <tr>
+            <td>Shipping</td>
+            <td>Freeship</td>
+          </tr>
+    
+          <tr>
+            <td colspan="2">
+                <button class="btn btn-primary btn-purchase" onclick="checkout()" type="button">PROCEED TO CHECKOUT</button>
+          </td>
+          </tr>
+        </table>
+      
+      </div>
+<script src="js/hello.js"></script>      
 </body>
 </html>
-
-
